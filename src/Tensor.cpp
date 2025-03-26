@@ -95,6 +95,14 @@ namespace star
         return this->data_.memptr();
     }
 
+    float *Tensor<float>::raw_ptr(uint32_t offset)
+    {
+        const uint32_t size = this->size();
+        CHECK(!this->data_.empty());
+        CHECK_LT(offset, size);
+        return this->data_.memptr() + offset;
+    }
+
     uint32_t Tensor<float>::size() const
     {
         CHECK(!this->data_.empty());

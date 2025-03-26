@@ -27,6 +27,7 @@ namespace star
         uint32_t size() const;
         std::vector<uint32_t> shapes() const;
         float *raw_ptr();
+        float *raw_ptr(uint32_t offset);
         float at(uint32_t channel, uint32_t row, uint32_t col) const;
         float &at(uint32_t channel, uint32_t row, uint32_t col);
         void Show();
