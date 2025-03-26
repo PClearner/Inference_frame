@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -o /root/star/inference/inference_frame/bin/tensor_test   -L/usr/local/lib  -Wl,-rpath,/usr/local/lib /usr/local/lib/libglog.so.0.8.0 /usr/lib/x86_64-linux-gnu/libarmadillo.so 

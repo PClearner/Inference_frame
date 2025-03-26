@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Site BuildName="Linux-c++"
+	BuildStamp="20250325-0131-Experimental"
+	Name="saas-de-zy2414234-star-ac70-8464fddff-5m2hk"
+	Generator="ctest-3.25.2-corex.3.2.0"
+	CompilerName="/usr/bin/c++"
+	CompilerVersion="9.4.0"
+	OSName="Linux"
+	Hostname="saas-de-zy2414234-star-ac70-8464fddff-5m2hk"
+	OSRelease="5.4.0-190-generic"
+	OSVersion="#210-Ubuntu SMP Fri Jul 5 17:03:38 UTC 2024"
+	OSPlatform="x86_64"
+	Is64Bits="1"
+	VendorString="HygonGenuine"
+	VendorID="Chengdu Haiguang IC Design Co., Ltd."
+	FamilyID="24"
+	ModelID="3"
+	ProcessorCacheSize="512"
+	NumberOfLogicalCPU="128"
+	NumberOfPhysicalCPU="64"
+	TotalVirtualMemory="8191"
+	TotalPhysicalMemory="515849"
+	LogicalProcessorsPerPhysical="2"
+	ProcessorClockFrequency="2900"
+	>
+	<Testing>
+		<StartDateTime>Mar 25 22:07 CST</StartDateTime>
+		<StartTestTime>1742911679</StartTestTime>
+		<TestList/>
+		<EndDateTime>Mar 25 22:07 CST</EndDateTime>
+		<EndTestTime>1742911679</EndTestTime>
+		<ElapsedMinutes>0</ElapsedMinutes>
+	</Testing>
+</Site>

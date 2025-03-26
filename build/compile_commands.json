@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -c /root/star/inference/inference_frame/test/tensor_test.cpp",
+  "file": "/root/star/inference/inference_frame/test/tensor_test.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
+  "file": "/root/star/inference/inference_frame/src/Tensor.cpp"
+}
+]

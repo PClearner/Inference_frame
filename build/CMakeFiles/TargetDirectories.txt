@@ -1,0 +1,5 @@
+/root/star/inference/inference_frame/build/CMakeFiles/tensor_test.dir
+/root/star/inference/inference_frame/build/CMakeFiles/package.dir
+/root/star/inference/inference_frame/build/CMakeFiles/package_source.dir
+/root/star/inference/inference_frame/build/CMakeFiles/edit_cache.dir
+/root/star/inference/inference_frame/build/CMakeFiles/rebuild_cache.dir

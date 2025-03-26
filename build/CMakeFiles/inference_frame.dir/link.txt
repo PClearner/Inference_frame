@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/inference_frame.dir/main.cpp.o -o inference_frame 
