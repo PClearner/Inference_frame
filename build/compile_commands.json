@@ -1,12 +1,52 @@
 [
 {
   "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -c /root/star/inference/inference_frame/test/tensor_test.cpp",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -c /root/star/inference/inference_frame/test/tensor_test.cpp",
   "file": "/root/star/inference/inference_frame/test/tensor_test.cpp"
 },
 {
   "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
   "file": "/root/star/inference/inference_frame/src/Tensor.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/graph_test.dir/test/graph_test.cpp.o -c /root/star/inference/inference_frame/test/graph_test.cpp",
+  "file": "/root/star/inference/inference_frame/test/graph_test.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
+  "file": "/root/star/inference/inference_frame/src/Tensor.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/ir.cpp.o -c /root/star/inference/inference_frame/src/ir.cpp",
+  "file": "/root/star/inference/inference_frame/src/ir.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/load_data.cpp.o -c /root/star/inference/inference_frame/src/load_data.cpp",
+  "file": "/root/star/inference/inference_frame/src/load_data.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/store_zip.cpp.o -c /root/star/inference/inference_frame/src/store_zip.cpp",
+  "file": "/root/star/inference/inference_frame/src/store_zip.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/tensor_util.cpp.o -c /root/star/inference/inference_frame/src/tensor_util.cpp",
+  "file": "/root/star/inference/inference_frame/src/tensor_util.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp",
+  "file": "/root/star/inference/inference_frame/src/runtime/runtime_attr.cpp"
+},
+{
+  "directory": "/root/star/inference/inference_frame/build",
+  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp",
+  "file": "/root/star/inference/inference_frame/src/runtime/runtime_ir.cpp"
 }
 ]

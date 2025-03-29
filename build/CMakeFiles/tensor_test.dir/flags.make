@@ -6,5 +6,5 @@ CXX_DEFINES = -DGLOG_USE_GLOG_EXPORT
 
 CXX_INCLUDES = -I/root/star/inference/inference_frame/include
 
-CXX_FLAGS = -g
+CXX_FLAGS = -g -std=gnu++17
 

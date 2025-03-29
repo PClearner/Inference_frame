@@ -6,7 +6,45 @@
 
 namespace star
 {
-    Tensor<float>::Tensor(uint32_t cols, uint32_t rows, uint32_t channels)
+    Tensor<float>::Tensor(uint32_t cols)
+    {
+        uint32_t channels = 1;
+        uint32_t rows = 1;
+        data_ = arma::fcube(rows, cols, channels);
+        if (channels == 1 && rows == 1)
+        {
+            this->raw_shapes_ = std::vector<uint32_t>{cols};
+        }
+        else if (channels == 1)
+        {
+            this->raw_shapes_ = std::vector<uint32_t>{rows, cols};
+        }
+        else
+        {
+            this->raw_shapes_ = std::vector<uint32_t>{channels, rows, cols};
+        }
+    }
+
+    Tensor<float>::Tensor(uint32_t rows, uint32_t cols)
+    {
+        uint32_t channels = 1;
+        data_ = arma::fcube(rows, cols, channels);
+
+        if (channels == 1 && rows == 1)
+        {
+            this->raw_shapes_ = std::vector<uint32_t>{cols};
+        }
+        else if (channels == 1)
+        {
+            this->raw_shapes_ = std::vector<uint32_t>{rows, cols};
+        }
+        else
+        {
+            this->raw_shapes_ = std::vector<uint32_t>{channels, rows, cols};
+        }
+    }
+
+    Tensor<float>::Tensor(uint32_t channels, uint32_t rows, uint32_t cols)
     {
         data_ = arma::fcube(rows, cols, channels);
         if (channels == 1 && rows == 1)
@@ -109,6 +147,38 @@ namespace star
         return this->data_.size();
     }
 
+    void Tensor<float>::set_data(const arma::fcube &data)
+    {
+        CHECK(data.n_rows == this->data_.n_rows)
+            << data.n_rows << " != " << this->data_.n_rows;
+        CHECK(data.n_cols == this->data_.n_cols)
+            << data.n_cols << " != " << this->data_.n_cols;
+        CHECK(data.n_slices == this->data_.n_slices)
+            << data.n_slices << " != " << this->data_.n_slices;
+        this->data_ = data;
+    }
+
+    arma::fmat &Tensor<float>::slice(uint32_t channel)
+    {
+        CHECK_LT(channel, this->channels());
+        return this->data_.slice(channel);
+    }
+
+    bool Tensor<float>::empty() const
+    {
+        return this->data().empty();
+    }
+
+    arma::fcube &Tensor<float>::data() { return this->data_; }
+
+    const arma::fcube &Tensor<float>::data() const { return this->data_; }
+
+    const arma::fmat &Tensor<float>::slice(uint32_t channel) const
+    {
+        CHECK_LT(channel, this->channels());
+        return this->data_.slice(channel);
+    }
+
     std::vector<uint32_t> Tensor<float>::shapes() const
     {
         CHECK(!this->data_.empty());
@@ -129,6 +199,18 @@ namespace star
         CHECK_LT(col, this->cols());
         CHECK_LT(channel, this->channels());
         return this->data_.at(row, col, channel);
+    }
+
+    float Tensor<float>::index(uint32_t offset) const
+    {
+        CHECK(offset < this->data_.size()) << "Tensor index out of bound!";
+        return this->data_.at(offset);
+    }
+
+    float &Tensor<float>::index(uint32_t offset)
+    {
+        CHECK(offset < this->data_.size()) << "Tensor index out of bound!";
+        return this->data_.at(offset);
     }
 
     void Tensor<float>::Fill(float value)

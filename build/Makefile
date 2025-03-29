@@ -149,12 +149,26 @@ tensor_test/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor_test.dir/build.make CMakeFiles/tensor_test.dir/build
 .PHONY : tensor_test/fast
 
+#=============================================================================
+# Target rules for targets named graph_test
+
+# Build rule for target.
+graph_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 graph_test
+.PHONY : graph_test
+
+# fast build rule for target.
+graph_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/build
+.PHONY : graph_test/fast
+
 src/Tensor.o: src/Tensor.cpp.o
 .PHONY : src/Tensor.o
 
 # target to build an object file
 src/Tensor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor_test.dir/build.make CMakeFiles/tensor_test.dir/src/Tensor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/Tensor.cpp.o
 .PHONY : src/Tensor.cpp.o
 
 src/Tensor.i: src/Tensor.cpp.i
@@ -163,6 +177,7 @@ src/Tensor.i: src/Tensor.cpp.i
 # target to preprocess a source file
 src/Tensor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor_test.dir/build.make CMakeFiles/tensor_test.dir/src/Tensor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/Tensor.cpp.i
 .PHONY : src/Tensor.cpp.i
 
 src/Tensor.s: src/Tensor.cpp.s
@@ -171,7 +186,176 @@ src/Tensor.s: src/Tensor.cpp.s
 # target to generate assembly for a file
 src/Tensor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor_test.dir/build.make CMakeFiles/tensor_test.dir/src/Tensor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/Tensor.cpp.s
 .PHONY : src/Tensor.cpp.s
+
+src/ir.o: src/ir.cpp.o
+.PHONY : src/ir.o
+
+# target to build an object file
+src/ir.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/ir.cpp.o
+.PHONY : src/ir.cpp.o
+
+src/ir.i: src/ir.cpp.i
+.PHONY : src/ir.i
+
+# target to preprocess a source file
+src/ir.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/ir.cpp.i
+.PHONY : src/ir.cpp.i
+
+src/ir.s: src/ir.cpp.s
+.PHONY : src/ir.s
+
+# target to generate assembly for a file
+src/ir.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/ir.cpp.s
+.PHONY : src/ir.cpp.s
+
+src/load_data.o: src/load_data.cpp.o
+.PHONY : src/load_data.o
+
+# target to build an object file
+src/load_data.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/load_data.cpp.o
+.PHONY : src/load_data.cpp.o
+
+src/load_data.i: src/load_data.cpp.i
+.PHONY : src/load_data.i
+
+# target to preprocess a source file
+src/load_data.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/load_data.cpp.i
+.PHONY : src/load_data.cpp.i
+
+src/load_data.s: src/load_data.cpp.s
+.PHONY : src/load_data.s
+
+# target to generate assembly for a file
+src/load_data.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/load_data.cpp.s
+.PHONY : src/load_data.cpp.s
+
+src/runtime/runtime_attr.o: src/runtime/runtime_attr.cpp.o
+.PHONY : src/runtime/runtime_attr.o
+
+# target to build an object file
+src/runtime/runtime_attr.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.o
+.PHONY : src/runtime/runtime_attr.cpp.o
+
+src/runtime/runtime_attr.i: src/runtime/runtime_attr.cpp.i
+.PHONY : src/runtime/runtime_attr.i
+
+# target to preprocess a source file
+src/runtime/runtime_attr.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.i
+.PHONY : src/runtime/runtime_attr.cpp.i
+
+src/runtime/runtime_attr.s: src/runtime/runtime_attr.cpp.s
+.PHONY : src/runtime/runtime_attr.s
+
+# target to generate assembly for a file
+src/runtime/runtime_attr.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.s
+.PHONY : src/runtime/runtime_attr.cpp.s
+
+src/runtime/runtime_ir.o: src/runtime/runtime_ir.cpp.o
+.PHONY : src/runtime/runtime_ir.o
+
+# target to build an object file
+src/runtime/runtime_ir.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.o
+.PHONY : src/runtime/runtime_ir.cpp.o
+
+src/runtime/runtime_ir.i: src/runtime/runtime_ir.cpp.i
+.PHONY : src/runtime/runtime_ir.i
+
+# target to preprocess a source file
+src/runtime/runtime_ir.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.i
+.PHONY : src/runtime/runtime_ir.cpp.i
+
+src/runtime/runtime_ir.s: src/runtime/runtime_ir.cpp.s
+.PHONY : src/runtime/runtime_ir.s
+
+# target to generate assembly for a file
+src/runtime/runtime_ir.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.s
+.PHONY : src/runtime/runtime_ir.cpp.s
+
+src/store_zip.o: src/store_zip.cpp.o
+.PHONY : src/store_zip.o
+
+# target to build an object file
+src/store_zip.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/store_zip.cpp.o
+.PHONY : src/store_zip.cpp.o
+
+src/store_zip.i: src/store_zip.cpp.i
+.PHONY : src/store_zip.i
+
+# target to preprocess a source file
+src/store_zip.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/store_zip.cpp.i
+.PHONY : src/store_zip.cpp.i
+
+src/store_zip.s: src/store_zip.cpp.s
+.PHONY : src/store_zip.s
+
+# target to generate assembly for a file
+src/store_zip.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/store_zip.cpp.s
+.PHONY : src/store_zip.cpp.s
+
+src/tensor_util.o: src/tensor_util.cpp.o
+.PHONY : src/tensor_util.o
+
+# target to build an object file
+src/tensor_util.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/tensor_util.cpp.o
+.PHONY : src/tensor_util.cpp.o
+
+src/tensor_util.i: src/tensor_util.cpp.i
+.PHONY : src/tensor_util.i
+
+# target to preprocess a source file
+src/tensor_util.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/tensor_util.cpp.i
+.PHONY : src/tensor_util.cpp.i
+
+src/tensor_util.s: src/tensor_util.cpp.s
+.PHONY : src/tensor_util.s
+
+# target to generate assembly for a file
+src/tensor_util.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/tensor_util.cpp.s
+.PHONY : src/tensor_util.cpp.s
+
+test/graph_test.o: test/graph_test.cpp.o
+.PHONY : test/graph_test.o
+
+# target to build an object file
+test/graph_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/test/graph_test.cpp.o
+.PHONY : test/graph_test.cpp.o
+
+test/graph_test.i: test/graph_test.cpp.i
+.PHONY : test/graph_test.i
+
+# target to preprocess a source file
+test/graph_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/test/graph_test.cpp.i
+.PHONY : test/graph_test.cpp.i
+
+test/graph_test.s: test/graph_test.cpp.s
+.PHONY : test/graph_test.s
+
+# target to generate assembly for a file
+test/graph_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/test/graph_test.cpp.s
+.PHONY : test/graph_test.cpp.s
 
 test/tensor_test.o: test/tensor_test.cpp.o
 .PHONY : test/tensor_test.o
@@ -207,10 +391,32 @@ help:
 	@echo "... package"
 	@echo "... package_source"
 	@echo "... rebuild_cache"
+	@echo "... graph_test"
 	@echo "... tensor_test"
 	@echo "... src/Tensor.o"
 	@echo "... src/Tensor.i"
 	@echo "... src/Tensor.s"
+	@echo "... src/ir.o"
+	@echo "... src/ir.i"
+	@echo "... src/ir.s"
+	@echo "... src/load_data.o"
+	@echo "... src/load_data.i"
+	@echo "... src/load_data.s"
+	@echo "... src/runtime/runtime_attr.o"
+	@echo "... src/runtime/runtime_attr.i"
+	@echo "... src/runtime/runtime_attr.s"
+	@echo "... src/runtime/runtime_ir.o"
+	@echo "... src/runtime/runtime_ir.i"
+	@echo "... src/runtime/runtime_ir.s"
+	@echo "... src/store_zip.o"
+	@echo "... src/store_zip.i"
+	@echo "... src/store_zip.s"
+	@echo "... src/tensor_util.o"
+	@echo "... src/tensor_util.i"
+	@echo "... src/tensor_util.s"
+	@echo "... test/graph_test.o"
+	@echo "... test/graph_test.i"
+	@echo "... test/graph_test.s"
 	@echo "... test/tensor_test.o"
 	@echo "... test/tensor_test.i"
 	@echo "... test/tensor_test.s"

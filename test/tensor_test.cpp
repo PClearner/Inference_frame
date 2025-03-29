@@ -10,7 +10,11 @@ int main()
     tmp.Show();
     std::cout << "=================================" << std::endl;
 
-    std::vector<float> values(tmp.size(), 3.0f);
+    std::vector<float> values(tmp.size());
+    for (size_t i = 1; i <= values.size(); i++)
+    {
+        values[i - 1] = i;
+    }
     tmp.Fill(values);
     tmp.Show();
     std::cout << "=================================" << std::endl;
