@@ -5,6 +5,7 @@
 #include <memory>
 #include <utility>
 #include <vector>
+#include <stack>
 
 namespace star
 {
@@ -16,8 +17,8 @@ namespace star
     }
 
     /**
-     * ÉèÖÃÈ¨ÖØÎÄ¼ş
-     * @param bin_path È¨ÖØÎÄ¼şÂ·¾¶
+     * è®¾ç½®æƒé‡æ–‡ä»¶
+     * @param bin_path æƒé‡æ–‡ä»¶è·¯å¾„
      */
     void RuntimeGraph::set_bin_path(const std::string &bin_path)
     {
@@ -25,8 +26,8 @@ namespace star
     }
 
     /**
-     * ÉèÖÃ½á¹¹ÎÄ¼ş
-     * @param param_path  ½á¹¹ÎÄ¼şÂ·¾¶
+     * è®¾ç½®ç»“æ„æ–‡ä»¶
+     * @param param_path  ç»“æ„æ–‡ä»¶è·¯å¾„
      */
     void RuntimeGraph::set_param_path(const std::string &param_path)
     {
@@ -34,8 +35,8 @@ namespace star
     }
 
     /**
-     * ·µ»Ø½á¹¹ÎÄ¼ş
-     * @return ·µ»Ø½á¹¹ÎÄ¼ş
+     * è¿”å›ç»“æ„æ–‡ä»¶
+     * @return è¿”å›ç»“æ„æ–‡ä»¶
      */
     const std::string &RuntimeGraph::param_path() const
     {
@@ -43,8 +44,8 @@ namespace star
     }
 
     /**
-     * ·µ»ØÈ¨ÖØÎÄ¼ş
-     * @return ·µ»ØÈ¨ÖØÎÄ¼ş
+     * è¿”å›æƒé‡æ–‡ä»¶
+     * @return è¿”å›æƒé‡æ–‡ä»¶
      */
     const std::string &RuntimeGraph::bin_path() const
     {
@@ -52,8 +53,8 @@ namespace star
     }
 
     /**
-     * ¼ÆËãÍ¼µÄ³õÊ¼»¯
-     * @return ÊÇ·ñ³õÊ¼»¯³É¹¦
+     * è®¡ç®—å›¾çš„åˆå§‹åŒ–
+     * @return æ˜¯å¦åˆå§‹åŒ–æˆåŠŸ
      */
     bool RuntimeGraph::Init()
     {
@@ -124,12 +125,243 @@ namespace star
                 this->operators_maps_.insert({op->name, op});
             }
         }
+        graph_state_ = GraphState::NeedBuild;
         return true;
     }
 
     const std::vector<std::shared_ptr<RuntimeOperator>> &RuntimeGraph::operators() const
     {
         return this->operators_;
+    }
+
+    void RuntimeGraph::Build(const std::string &input_name, const std::string &output_name, bool deeporbreath)
+    {
+        // check
+        if (this->graph_state_ == GraphState::Complete)
+        {
+            LOG(INFO) << "Model has been built already!";
+            return;
+        }
+
+        if (this->graph_state_ == GraphState::NeedInit)
+        {
+            bool init_graph = Init();
+            LOG_IF(FATAL, !init_graph) << "Init graph failed!";
+        }
+
+        CHECK(graph_state_ >= GraphState::NeedBuild)
+            << "Graph status error, current state is " << int(graph_state_);
+        LOG_IF(FATAL, this->operators_.empty())
+            << "Graph operators is empty, may be no init";
+        //
+
+        // è·å–å½“å‰èŠ‚ç‚¹çš„æ‰€æœ‰åç»§èŠ‚ç‚¹çš„namesï¼Œéå†æ ¹æ®next_op_nameä»operators_maps_ä¸­æ’å…¥æ‰€éœ€è¦çš„èŠ‚ç‚¹
+        for (const auto &current_op : this->operators_)
+        {
+            const auto &outnames = current_op->output_names;
+            for (auto outname : outnames)
+            {
+                auto tmp = this->operators_maps_.find(outname);
+                CHECK(tmp != this->operators_maps_.end());
+                current_op->output_operators.insert({outname, tmp->second});
+            }
+        }
+
+        // åˆå§‹åŒ–èŠ‚ç‚¹çš„è¾“å…¥å’Œè¾“å‡ºç©ºé—´
+        // initiaze operands
+        RuntimeOperatorUtils::InitOperatorInput(this->operators_);
+        RuntimeOperatorUtils::InitOperatorOutput(this->graph_->ops, this->operators_);
+
+        // sort
+        // æ„å»ºæ‹“æ‰‘é¡ºåº
+        sort(deeporbreath);
+
+        // æ”¶å°¾å·¥ä½œ
+        this->graph_state_ = GraphState::Complete;
+        this->input_name_ = input_name;
+        this->output_name_ = output_name;
+
+        if (this->graph_ != nullptr)
+        {
+            this->graph_.reset();
+            this->graph_ = nullptr;
+        }
+    }
+
+    void RuntimeGraph::sort(bool deeporbreadth)
+    {
+        if (deeporbreadth)
+        {
+            deepsearch();
+        }
+        else
+        {
+            breadthsearch();
+        }
+    }
+
+    void RuntimeGraph::deepsearch()
+    {
+        std::vector<std::shared_ptr<RuntimeOperator>> result;
+        std::stack<std::shared_ptr<RuntimeOperator>> cap;
+
+        this->topo_operators_.clear();
+        std::shared_ptr<RuntimeOperator> start;
+        for (const auto &s : this->operators_)
+        {
+            if (s->type == "pnnx.Input" && !s->has_forward)
+            {
+                start = s;
+            }
+        }
+
+        cap.push(start);
+
+        while (!cap.empty())
+        {
+            std::shared_ptr<RuntimeOperator> tmp = cap.top();
+
+            for (const auto &s : tmp->output_names)
+            {
+                const auto &sp = this->operators_maps_.find(s);
+                CHECK(sp != this->operators_maps_.end());
+                if (!sp->second->has_forward)
+                {
+                    cap.push(sp->second);
+                    break;
+                }
+            }
+
+            if (tmp == cap.top())
+            {
+                tmp->has_forward = true;
+                result.push_back(tmp);
+                cap.pop();
+            }
+        }
+
+        for (int i = result.size() - 1; i >= 0; i--)
+        {
+
+            this->topo_operators_.push_back(result[i]);
+        }
+    }
+
+    void RuntimeGraph::breadthsearch()
+    {
+        std::vector<std::shared_ptr<RuntimeOperator>> result;
+        std::queue<std::shared_ptr<RuntimeOperator>> cap;
+
+        this->topo_operators_.clear();
+        std::shared_ptr<RuntimeOperator> start;
+
+        std::unordered_map<std::string, size_t> index;
+        std::unordered_map<std::string, bool> incap;
+
+        for (const auto &s : this->operators_)
+        {
+            if (s->type == "pnnx.Input" && !s->has_forward)
+            {
+                start = s;
+            }
+        }
+
+        cap.push(start);
+
+        while (!cap.empty())
+        {
+            std::shared_ptr<RuntimeOperator> tmp = cap.front();
+
+            tmp->has_forward = true;
+            result.push_back(tmp);
+            index[tmp->name] = result.size() - 1;
+            // LOG(INFO) << "[breadthsearch]|tmp:" << tmp->name;
+            for (const auto &s : tmp->output_names)
+            {
+                auto sp = this->operators_maps_.find(s);
+                CHECK(sp != this->operators_maps_.end());
+                if (!sp->second->has_forward)
+                {
+                    if (incap.find(sp->second->name) == incap.end())
+                    {
+                        cap.push(sp->second);
+                        incap[sp->second->name] = true;
+                    }
+                }
+                else
+                {
+                    auto x = tmp;
+                    auto y = sp->second;
+
+                    size_t index1 = index[x->name];
+                    size_t index2 = index[y->name];
+                    CHECK(index1 != index2);
+
+                    if (index1 > index2)
+                    {
+                        // LOG(INFO) << "[breadthsearch]|sp:" << y->name << " has_forward." << " exchange with tmp:" << x->name;
+                        std::shared_ptr<RuntimeOperator> tt = result[index2];
+                        result[index2] = result[index1];
+                        result[index1] = tt;
+                        index[x->name] = index2;
+                        index[y->name] = index1;
+
+                        while (1)
+                        {
+                            size_t min_index = SIZE_MAX;
+                            std::string min_name = "";
+                            index1 = index[y->name];
+                            for (auto on : y->output_names)
+                            {
+                                if (index.find(on) == index.end())
+                                {
+                                    continue;
+                                }
+                                index2 = index[on];
+                                CHECK(index1 != index2);
+
+                                if (index1 > index2)
+                                {
+                                    // LOG(INFO) << "[breadthsearch]|[in while]||sp index: " << index2 << " sp name: " << on << " | ttmp index: " << index1 << " ttmp name: " << y->name;
+                                    if (min_index > index2)
+                                    {
+                                        min_index = index2;
+                                        min_name = on;
+                                    }
+                                }
+                            }
+                            if (min_name == "")
+                            {
+                                break;
+                            }
+                            else
+                            {
+                                // LOG(INFO) << "[breadthsearch]|[in while]||sp:" << y->name << " has_forward." << " exchange with tmp:" << min_name;
+                                index2 = index[min_name];
+                                std::shared_ptr<RuntimeOperator> tt = result[index2];
+                                result[index2] = result[index1];
+                                result[index1] = tt;
+                                index[min_name] = index2;
+                                index[y->name] = index1;
+                                y = this->operators_maps_[min_name];
+                            }
+                        }
+                    }
+                    else
+                    {
+                        // LOG(INFO) << "[breadthsearch]|sp index:" << index2 << " | ttmp index:" << index1;
+                        break;
+                    }
+                }
+            }
+            cap.pop();
+        }
+        this->topo_operators_ = result;
+    }
+
+    const std::vector<std::shared_ptr<RuntimeOperator>> &RuntimeGraph::get_topo_queues() const
+    {
+        return topo_operators_;
     }
 
     void RuntimeGraph::InitGraphOperatorsInput(
@@ -171,9 +403,9 @@ namespace star
     }
 
     /**
-     * ³õÊ¼»¯kuiper infer¼ÆËãÍ¼½ÚµãÖĞµÄÊä³ö²Ù×÷Êı
-     * @param outputs pnnxÖĞµÄÊä³ö²Ù×÷Êı
-     * @param runtime_operator ¼ÆËãÍ¼½Úµã
+     * åˆå§‹åŒ–kuiper inferè®¡ç®—å›¾èŠ‚ç‚¹ä¸­çš„è¾“å‡ºæ“ä½œæ•°
+     * @param outputs pnnxä¸­çš„è¾“å‡ºæ“ä½œæ•°
+     * @param runtime_operator è®¡ç®—å›¾èŠ‚ç‚¹
      */
     void RuntimeGraph::InitGraphOperatorsOutput(
         const std::vector<pnnx::Operand *> &outputs,
@@ -194,9 +426,9 @@ namespace star
     }
 
     /**
-     * ³õÊ¼»¯kuiper infer¼ÆËãÍ¼ÖĞµÄ½ÚµãÊôĞÔ
-     * @param attrs pnnxÖĞµÄ½ÚµãÊôĞÔ
-     * @param runtime_operator ¼ÆËãÍ¼½Úµã
+     * åˆå§‹åŒ–kuiper inferè®¡ç®—å›¾ä¸­çš„èŠ‚ç‚¹å±æ€§
+     * @param attrs pnnxä¸­çš„èŠ‚ç‚¹å±æ€§
+     * @param runtime_operator è®¡ç®—å›¾èŠ‚ç‚¹
      */
     void RuntimeGraph::InitGraphAttrs(const std::map<std::string, pnnx::Attribute> &attrs,
                                       const std::shared_ptr<RuntimeOperator> &runtime_operator)
@@ -229,9 +461,9 @@ namespace star
     }
 
     /**
-     * ³õÊ¼»¯kuiper infer¼ÆËãÍ¼ÖĞµÄ½Úµã²ÎÊı
-     * @param params pnnxÖĞµÄ²ÎÊıÊôĞÔ
-     * @param runtime_operator ¼ÆËãÍ¼½Úµã
+     * åˆå§‹åŒ–kuiper inferè®¡ç®—å›¾ä¸­çš„èŠ‚ç‚¹å‚æ•°
+     * @param params pnnxä¸­çš„å‚æ•°å±æ€§
+     * @param runtime_operator è®¡ç®—å›¾èŠ‚ç‚¹
      */
     void RuntimeGraph::InitGraphParams(const std::map<std::string, pnnx::Parameter> &params,
                                        const std::shared_ptr<RuntimeOperator> &runtime_operator)
@@ -298,4 +530,5 @@ namespace star
         }
     }
 
+    RuntimeGraph::GraphState RuntimeGraph::graph_state() const { return this->graph_state_; }
 }

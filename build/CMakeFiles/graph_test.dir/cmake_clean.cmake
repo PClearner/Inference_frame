@@ -11,6 +11,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.o.d"
   "CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.o"
   "CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.o.d"
+  "CMakeFiles/graph_test.dir/src/runtime/runtime_op.cpp.o"
+  "CMakeFiles/graph_test.dir/src/runtime/runtime_op.cpp.o.d"
   "CMakeFiles/graph_test.dir/src/store_zip.cpp.o"
   "CMakeFiles/graph_test.dir/src/store_zip.cpp.o.d"
   "CMakeFiles/graph_test.dir/src/tensor_util.cpp.o"

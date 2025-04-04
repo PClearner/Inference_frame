@@ -45,7 +45,7 @@ namespace star
                      uint32_t cols, bool row_major = true);
 
         void Reshape(const std::vector<uint32_t> &shapes,
-                     bool row_major);
+                     bool row_major = true);
 
         arma::fcube &data();
 

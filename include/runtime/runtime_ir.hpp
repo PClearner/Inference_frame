@@ -53,6 +53,10 @@ namespace star
          */
         bool Init();
 
+        void Build(const std::string &input_name, const std::string &output_name, bool deeporbreath = true);
+
+        const std::vector<std::shared_ptr<RuntimeOperator>> &get_topo_queues() const;
+
         std::vector<std::shared_ptr<RuntimeOperator>> get_operators() const
         {
             return this->operators_;
@@ -102,15 +106,38 @@ namespace star
         InitGraphParams(const std::map<std::string, pnnx::Parameter> &params,
                         const std::shared_ptr<RuntimeOperator> &runtime_operator);
 
+        // true is deep
+        void sort(bool deeporbreadth);
+
+        void deepsearch();
+
+        void breadthsearch();
+
+    private:
+        enum class GraphState
+        {
+            NeedInit = -2,
+            NeedBuild = -1,
+            Complete = 0,
+        };
+
+    public:
+        /**
+         * 返回模型当前的状态
+         * @return 返回模型当前的状态
+         */
+        GraphState graph_state() const;
+
     private:
         std::string input_name_;  /// 计算图输入节点的名称
         std::string output_name_; /// 计算图输出节点的名称
         std::string param_path_;  /// 计算图的结构文件
         std::string bin_path_;    /// 计算图的权重文件
+        GraphState graph_state_ = GraphState::NeedInit;
 
         std::vector<std::shared_ptr<RuntimeOperator>> operators_;
         std::map<std::string, std::shared_ptr<RuntimeOperator>> operators_maps_;
-
+        std::vector<std::shared_ptr<RuntimeOperator>> topo_operators_;
         std::unique_ptr<pnnx::Graph> graph_; /// pnnx的graph
     };
 }

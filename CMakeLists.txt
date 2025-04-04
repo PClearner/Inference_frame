@@ -43,3 +43,14 @@ set_target_properties(graph_test PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/graph
     )
 
+
+add_executable(graph_build 
+        ${CMAKE_SOURCE_DIR}/test/graph_build.cpp 
+        ${DIR_SOURCE_ARMA}
+        ${DIR_SOURCE_RUNTIME}
+)
+
+target_link_libraries(graph_build glog::glog ${ARMADILLO_LIBRARIES})
+set_target_properties(graph_build PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/graph
+    )
