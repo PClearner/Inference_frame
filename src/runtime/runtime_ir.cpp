@@ -125,7 +125,7 @@ namespace star
                 this->operators_maps_.insert({op->name, op});
             }
         }
-        graph_state_ = GraphState::NeedBuild;
+        this->graph_state_ = GraphState::NeedBuild;
         return true;
     }
 

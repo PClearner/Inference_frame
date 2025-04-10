@@ -1270,6 +1270,18 @@
 			"value" : "[/usr/include][/usr/lib/x86_64-linux-gnu/libarmadillo.so][v14.4.0()]"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_GTest",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding GTest"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/root/miniconda3/lib/cmake/GTest/GTestConfig.cmake][c ][v1.11.0()]"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Threads",
 			"properties" : 
 			[
@@ -1280,6 +1292,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "[TRUE][v()]"
+		},
+		{
+			"name" : "GTest_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for GTest."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/root/miniconda3/lib/cmake/GTest"
 		},
 		{
 			"name" : "_CMAKE_LINKER_PUSHPOP_STATE_SUPPORTED",
@@ -1304,6 +1328,18 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/local/lib/cmake/glog"
+		},
+		{
+			"name" : "gtest_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for gtest."
+				}
+			],
+			"type" : "PATH",
+			"value" : "gtest_DIR-NOTFOUND"
 		},
 		{
 			"name" : "inference_frame_BINARY_DIR",

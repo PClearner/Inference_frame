@@ -17,6 +17,7 @@ add_executable(tensor_test
 
 
 find_package(glog REQUIRED)
+find_package(GTest REQUIRED)
 find_package(Armadillo REQUIRED)
 target_link_libraries(tensor_test glog::glog ${ARMADILLO_LIBRARIES})
 
@@ -50,7 +51,7 @@ add_executable(graph_build
         ${DIR_SOURCE_RUNTIME}
 )
 
-target_link_libraries(graph_build glog::glog ${ARMADILLO_LIBRARIES})
+target_link_libraries(graph_build glog::glog  ${ARMADILLO_LIBRARIES})
 set_target_properties(graph_build PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/graph
     )

@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/root/star/inference/inference_frame/bin/graph/graph_test"
+			"path" : "/root/star/inference/inference_frame/bin/tensor_test"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 34,
+				"line" : 14,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 40,
+				"line" : 22,
 				"parent" : 0
 			},
 			{
@@ -88,18 +88,11 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8
+				1
 			]
 		}
 	],
-	"id" : "graph_test::@6890427a1f51a3e7e1df",
+	"id" : "tensor_test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -134,8 +127,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "graph_test",
-	"nameOnDisk" : "graph_test",
+	"name" : "tensor_test",
+	"nameOnDisk" : "tensor_test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -148,21 +141,7 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1,
-				2,
-				3,
-				4,
-				5,
-				6,
-				7,
-				8
-			]
-		},
-		{
-			"name" : "Header Files",
-			"sourceIndexes" : 
-			[
-				9
+				1
 			]
 		}
 	],
@@ -171,7 +150,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "test/graph_test.cpp",
+			"path" : "test/tensor_test.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -179,53 +158,6 @@
 			"compileGroupIndex" : 0,
 			"path" : "src/Tensor.cpp",
 			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/ir.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/load_data.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/store_zip.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/tensor_util.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/runtime/runtime_attr.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/runtime/runtime_ir.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"compileGroupIndex" : 0,
-			"path" : "src/runtime/runtime_op.cpp",
-			"sourceGroupIndex" : 0
-		},
-		{
-			"backtrace" : 1,
-			"path" : "include/runtime/runtime_datatype.hpp",
-			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

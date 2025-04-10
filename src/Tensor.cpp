@@ -305,6 +305,11 @@ namespace star
         }
     }
 
+    const std::vector<uint32_t> &Tensor<float>::raw_shapes() const
+    {
+        return this->raw_shapes_;
+    }
+
     void Tensor<float>::Reshape(const std::vector<uint32_t> &shapes,
                                 bool row_major)
     {

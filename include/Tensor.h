@@ -32,6 +32,7 @@ namespace star
         bool empty() const;
         float *raw_ptr();
         float *raw_ptr(uint32_t offset);
+        const std::vector<uint32_t> &raw_shapes() const;
         float at(uint32_t channel, uint32_t row, uint32_t col) const;
         float &at(uint32_t channel, uint32_t row, uint32_t col);
         float index(uint32_t offset) const;
