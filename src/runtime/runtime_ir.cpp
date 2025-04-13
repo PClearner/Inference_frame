@@ -1,5 +1,6 @@
 #include "runtime/runtime_ir.hpp"
 #include "status_code.hpp"
+#include "layer/abstract/layer_factory.hpp"
 #include <deque>
 #include <iostream>
 #include <memory>
@@ -14,6 +15,15 @@ namespace star
     {
         set_bin_path(bin_path);
         set_param_path(param_path);
+    }
+
+    std::shared_ptr<Layer> RuntimeGraph::CreateLayer(
+        const std::shared_ptr<RuntimeOperator> &op)
+    {
+        LOG_IF(FATAL, !op) << "Operator is empty!";
+        auto layer = LayerRegisterer::CreateLayer(op);
+        LOG_IF(FATAL, !layer) << "Layer init failed " << op->type;
+        return layer;
     }
 
     /**
@@ -175,6 +185,23 @@ namespace star
         // sort
         // 构建拓扑顺序
         sort(deeporbreath);
+
+        // layer initialize
+        for (const auto &op : this->topo_operators_)
+        {
+            // 除了输入和输出节点，都创建layer
+            if (op->type != "pnnx.Input" && op->type != "pnnx.Output")
+            {
+                std::shared_ptr<Layer> layer = RuntimeGraph::CreateLayer(op);
+                CHECK(layer != nullptr)
+                    << "Layer " << op->name << " create failed!";
+                if (layer)
+                {
+                    op->layer = layer;
+                    layer->set_runtime_operator(op);
+                }
+            }
+        }
 
         // 收尾工作
         this->graph_state_ = GraphState::Complete;

@@ -5,67 +5,67 @@ namespace star
 
     enum class RuntimeParameterType
     {
-        kParameterUnknown = 0,
-        kParameterBool = 1,
-        kParameterInt = 2,
+        ParameterUnknown = 0,
+        ParameterBool = 1,
+        ParameterInt = 2,
 
-        kParameterFloat = 3,
-        kParameterString = 4,
-        kParameterIntArray = 5,
-        kParameterFloatArray = 6,
-        kParameterStringArray = 7,
+        ParameterFloat = 3,
+        ParameterString = 4,
+        ParameterIntArray = 5,
+        ParameterFloatArray = 6,
+        ParameterStringArray = 7,
     };
 
     enum class InferStatus
     {
-        kInferUnknown = -1,
-        kInferSuccess = 0,
+        InferUnknown = -1,
+        InferSuccess = 0,
 
-        kInferFailedInputEmpty = 1,
-        kInferFailedWeightParameterError = 2,
-        kInferFailedBiasParameterError = 3,
-        kInferFailedStrideParameterError = 4,
-        kInferFailedDimensionParameterError = 5,
-        kInferFailedInputOutSizeMatchError = 6,
+        InferFailedInputEmpty = 1,
+        InferFailedWeightParameterError = 2,
+        InferFailedBiasParameterError = 3,
+        InferFailedStrideParameterError = 4,
+        InferFailedDimensionParameterError = 5,
+        InferFailedInputOutSizeMatchError = 6,
 
-        kInferFailedOutputSizeError = 7,
-        kInferFailedShapeParameterError = 9,
-        kInferFailedChannelParameterError = 10,
-        kInferFailedOutputEmpty = 11,
+        InferFailedOutputSizeError = 7,
+        InferFailedShapeParameterError = 9,
+        InferFailedChannelParameterError = 10,
+        InferFailedOutputEmpty = 11,
 
     };
 
     enum class ParseParameterAttrStatus
     {
-        kParameterMissingUnknown = -1,
-        kParameterMissingStride = 1,
-        kParameterMissingPadding = 2,
-        kParameterMissingKernel = 3,
-        kParameterMissingUseBias = 4,
-        kParameterMissingInChannel = 5,
-        kParameterMissingOutChannel = 6,
+        ParameterMissingUnknown = -1,
+        ParameterMissingStride = 1,
+        ParameterMissingPadding = 2,
+        ParameterMissingKernel = 3,
+        ParameterMissingUseBias = 4,
+        ParameterMissingInChannel = 5,
+        ParameterMissingOutChannel = 6,
 
-        kParameterMissingEps = 7,
-        kParameterMissingNumFeatures = 8,
-        kParameterMissingDim = 9,
-        kParameterMissingExpr = 10,
-        kParameterMissingOutHW = 11,
-        kParameterMissingShape = 12,
-        kParameterMissingGroups = 13,
-        kParameterMissingScale = 14,
-        kParameterMissingResizeMode = 15,
-        kParameterMissingDilation = 16,
-        kParameterMissingPaddingMode = 16,
+        ParameterMissingEps = 7,
+        ParameterMissingNumFeatures = 8,
+        ParameterMissingDim = 9,
+        ParameterMissingExpr = 10,
+        ParameterMissingOutHW = 11,
+        ParameterMissingShape = 12,
+        ParameterMissingGroups = 13,
+        ParameterMissingScale = 14,
+        ParameterMissingResizeMode = 15,
+        ParameterMissingDilation = 16,
+        ParameterMissingPaddingMode = 16,
 
-        kAttrMissingBias = 21,
-        kAttrMissingWeight = 22,
-        kAttrMissingRunningMean = 23,
-        kAttrMissingRunningVar = 24,
-        kAttrMissingOutFeatures = 25,
-        kAttrMissingYoloStrides = 26,
-        kAttrMissingYoloAnchorGrides = 27,
-        kAttrMissingYoloGrides = 28,
+        AttrMissingBias = 21,
+        AttrMissingWeight = 22,
+        AttrMissingRunningMean = 23,
+        AttrMissingRunningVar = 24,
+        AttrMissingOutFeatures = 25,
+        AttrMissingYoloStrides = 26,
+        AttrMissingYoloAnchorGrides = 27,
+        AttrMissingYoloGrides = 28,
 
-        kParameterAttrParseSuccess = 0
+        ParameterAttrParseSuccess = 0
     };
-} // namespace kuiper_infer
+} //

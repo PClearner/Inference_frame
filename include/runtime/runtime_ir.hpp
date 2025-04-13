@@ -113,6 +113,9 @@ namespace star
 
         void breadthsearch();
 
+        static std::shared_ptr<Layer> CreateLayer(
+            const std::shared_ptr<RuntimeOperator> &op);
+
     private:
         enum class GraphState
         {

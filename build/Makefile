@@ -175,6 +175,19 @@ graph_build/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/build
 .PHONY : graph_build/fast
 
+#=============================================================================
+# Target rules for targets named layer_test
+
+# Build rule for target.
+layer_test: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 layer_test
+.PHONY : layer_test
+
+# fast build rule for target.
+layer_test/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/build
+.PHONY : layer_test/fast
+
 src/Tensor.o: src/Tensor.cpp.o
 .PHONY : src/Tensor.o
 
@@ -183,6 +196,7 @@ src/Tensor.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor_test.dir/build.make CMakeFiles/tensor_test.dir/src/Tensor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/Tensor.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/Tensor.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/Tensor.cpp.o
 .PHONY : src/Tensor.cpp.o
 
 src/Tensor.i: src/Tensor.cpp.i
@@ -193,6 +207,7 @@ src/Tensor.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor_test.dir/build.make CMakeFiles/tensor_test.dir/src/Tensor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/Tensor.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/Tensor.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/Tensor.cpp.i
 .PHONY : src/Tensor.cpp.i
 
 src/Tensor.s: src/Tensor.cpp.s
@@ -203,6 +218,7 @@ src/Tensor.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/tensor_test.dir/build.make CMakeFiles/tensor_test.dir/src/Tensor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/Tensor.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/Tensor.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/Tensor.cpp.s
 .PHONY : src/Tensor.cpp.s
 
 src/ir.o: src/ir.cpp.o
@@ -212,6 +228,7 @@ src/ir.o: src/ir.cpp.o
 src/ir.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/ir.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/ir.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/ir.cpp.o
 .PHONY : src/ir.cpp.o
 
 src/ir.i: src/ir.cpp.i
@@ -221,6 +238,7 @@ src/ir.i: src/ir.cpp.i
 src/ir.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/ir.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/ir.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/ir.cpp.i
 .PHONY : src/ir.cpp.i
 
 src/ir.s: src/ir.cpp.s
@@ -230,7 +248,188 @@ src/ir.s: src/ir.cpp.s
 src/ir.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/ir.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/ir.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/ir.cpp.s
 .PHONY : src/ir.cpp.s
+
+src/layer/abstract/layer.o: src/layer/abstract/layer.cpp.o
+.PHONY : src/layer/abstract/layer.o
+
+# target to build an object file
+src/layer/abstract/layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o
+.PHONY : src/layer/abstract/layer.cpp.o
+
+src/layer/abstract/layer.i: src/layer/abstract/layer.cpp.i
+.PHONY : src/layer/abstract/layer.i
+
+# target to preprocess a source file
+src/layer/abstract/layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.i
+.PHONY : src/layer/abstract/layer.cpp.i
+
+src/layer/abstract/layer.s: src/layer/abstract/layer.cpp.s
+.PHONY : src/layer/abstract/layer.s
+
+# target to generate assembly for a file
+src/layer/abstract/layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.s
+.PHONY : src/layer/abstract/layer.cpp.s
+
+src/layer/abstract/layer_factory.o: src/layer/abstract/layer_factory.cpp.o
+.PHONY : src/layer/abstract/layer_factory.o
+
+# target to build an object file
+src/layer/abstract/layer_factory.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/layer_factory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o
+.PHONY : src/layer/abstract/layer_factory.cpp.o
+
+src/layer/abstract/layer_factory.i: src/layer/abstract/layer_factory.cpp.i
+.PHONY : src/layer/abstract/layer_factory.i
+
+# target to preprocess a source file
+src/layer/abstract/layer_factory.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/layer_factory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.i
+.PHONY : src/layer/abstract/layer_factory.cpp.i
+
+src/layer/abstract/layer_factory.s: src/layer/abstract/layer_factory.cpp.s
+.PHONY : src/layer/abstract/layer_factory.s
+
+# target to generate assembly for a file
+src/layer/abstract/layer_factory.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/layer_factory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.s
+.PHONY : src/layer/abstract/layer_factory.cpp.s
+
+src/layer/abstract/non_param_layer.o: src/layer/abstract/non_param_layer.cpp.o
+.PHONY : src/layer/abstract/non_param_layer.o
+
+# target to build an object file
+src/layer/abstract/non_param_layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/non_param_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o
+.PHONY : src/layer/abstract/non_param_layer.cpp.o
+
+src/layer/abstract/non_param_layer.i: src/layer/abstract/non_param_layer.cpp.i
+.PHONY : src/layer/abstract/non_param_layer.i
+
+# target to preprocess a source file
+src/layer/abstract/non_param_layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/non_param_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.i
+.PHONY : src/layer/abstract/non_param_layer.cpp.i
+
+src/layer/abstract/non_param_layer.s: src/layer/abstract/non_param_layer.cpp.s
+.PHONY : src/layer/abstract/non_param_layer.s
+
+# target to generate assembly for a file
+src/layer/abstract/non_param_layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/non_param_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.s
+.PHONY : src/layer/abstract/non_param_layer.cpp.s
+
+src/layer/abstract/param_layer.o: src/layer/abstract/param_layer.cpp.o
+.PHONY : src/layer/abstract/param_layer.o
+
+# target to build an object file
+src/layer/abstract/param_layer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/param_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o
+.PHONY : src/layer/abstract/param_layer.cpp.o
+
+src/layer/abstract/param_layer.i: src/layer/abstract/param_layer.cpp.i
+.PHONY : src/layer/abstract/param_layer.i
+
+# target to preprocess a source file
+src/layer/abstract/param_layer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/param_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.i
+.PHONY : src/layer/abstract/param_layer.cpp.i
+
+src/layer/abstract/param_layer.s: src/layer/abstract/param_layer.cpp.s
+.PHONY : src/layer/abstract/param_layer.s
+
+# target to generate assembly for a file
+src/layer/abstract/param_layer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/abstract/param_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.s
+.PHONY : src/layer/abstract/param_layer.cpp.s
+
+src/layer/detail/relu.o: src/layer/detail/relu.cpp.o
+.PHONY : src/layer/detail/relu.o
+
+# target to build an object file
+src/layer/detail/relu.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/detail/relu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o
+.PHONY : src/layer/detail/relu.cpp.o
+
+src/layer/detail/relu.i: src/layer/detail/relu.cpp.i
+.PHONY : src/layer/detail/relu.i
+
+# target to preprocess a source file
+src/layer/detail/relu.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/detail/relu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.i
+.PHONY : src/layer/detail/relu.cpp.i
+
+src/layer/detail/relu.s: src/layer/detail/relu.cpp.s
+.PHONY : src/layer/detail/relu.s
+
+# target to generate assembly for a file
+src/layer/detail/relu.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/detail/relu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.s
+.PHONY : src/layer/detail/relu.cpp.s
+
+src/layer/detail/sigmoid.o: src/layer/detail/sigmoid.cpp.o
+.PHONY : src/layer/detail/sigmoid.o
+
+# target to build an object file
+src/layer/detail/sigmoid.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/detail/sigmoid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o
+.PHONY : src/layer/detail/sigmoid.cpp.o
+
+src/layer/detail/sigmoid.i: src/layer/detail/sigmoid.cpp.i
+.PHONY : src/layer/detail/sigmoid.i
+
+# target to preprocess a source file
+src/layer/detail/sigmoid.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/detail/sigmoid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.i
+.PHONY : src/layer/detail/sigmoid.cpp.i
+
+src/layer/detail/sigmoid.s: src/layer/detail/sigmoid.cpp.s
+.PHONY : src/layer/detail/sigmoid.s
+
+# target to generate assembly for a file
+src/layer/detail/sigmoid.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/layer/detail/sigmoid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.s
+.PHONY : src/layer/detail/sigmoid.cpp.s
 
 src/load_data.o: src/load_data.cpp.o
 .PHONY : src/load_data.o
@@ -239,6 +438,7 @@ src/load_data.o: src/load_data.cpp.o
 src/load_data.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/load_data.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/load_data.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/load_data.cpp.o
 .PHONY : src/load_data.cpp.o
 
 src/load_data.i: src/load_data.cpp.i
@@ -248,6 +448,7 @@ src/load_data.i: src/load_data.cpp.i
 src/load_data.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/load_data.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/load_data.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/load_data.cpp.i
 .PHONY : src/load_data.cpp.i
 
 src/load_data.s: src/load_data.cpp.s
@@ -257,6 +458,7 @@ src/load_data.s: src/load_data.cpp.s
 src/load_data.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/load_data.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/load_data.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/load_data.cpp.s
 .PHONY : src/load_data.cpp.s
 
 src/runtime/runtime_attr.o: src/runtime/runtime_attr.cpp.o
@@ -266,6 +468,7 @@ src/runtime/runtime_attr.o: src/runtime/runtime_attr.cpp.o
 src/runtime/runtime_attr.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o
 .PHONY : src/runtime/runtime_attr.cpp.o
 
 src/runtime/runtime_attr.i: src/runtime/runtime_attr.cpp.i
@@ -275,6 +478,7 @@ src/runtime/runtime_attr.i: src/runtime/runtime_attr.cpp.i
 src/runtime/runtime_attr.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.i
 .PHONY : src/runtime/runtime_attr.cpp.i
 
 src/runtime/runtime_attr.s: src/runtime/runtime_attr.cpp.s
@@ -284,6 +488,7 @@ src/runtime/runtime_attr.s: src/runtime/runtime_attr.cpp.s
 src/runtime/runtime_attr.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.s
 .PHONY : src/runtime/runtime_attr.cpp.s
 
 src/runtime/runtime_ir.o: src/runtime/runtime_ir.cpp.o
@@ -293,6 +498,7 @@ src/runtime/runtime_ir.o: src/runtime/runtime_ir.cpp.o
 src/runtime/runtime_ir.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_ir.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o
 .PHONY : src/runtime/runtime_ir.cpp.o
 
 src/runtime/runtime_ir.i: src/runtime/runtime_ir.cpp.i
@@ -302,6 +508,7 @@ src/runtime/runtime_ir.i: src/runtime/runtime_ir.cpp.i
 src/runtime/runtime_ir.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_ir.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.i
 .PHONY : src/runtime/runtime_ir.cpp.i
 
 src/runtime/runtime_ir.s: src/runtime/runtime_ir.cpp.s
@@ -311,6 +518,7 @@ src/runtime/runtime_ir.s: src/runtime/runtime_ir.cpp.s
 src/runtime/runtime_ir.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_ir.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.s
 .PHONY : src/runtime/runtime_ir.cpp.s
 
 src/runtime/runtime_op.o: src/runtime/runtime_op.cpp.o
@@ -320,6 +528,7 @@ src/runtime/runtime_op.o: src/runtime/runtime_op.cpp.o
 src/runtime/runtime_op.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_op.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o
 .PHONY : src/runtime/runtime_op.cpp.o
 
 src/runtime/runtime_op.i: src/runtime/runtime_op.cpp.i
@@ -329,6 +538,7 @@ src/runtime/runtime_op.i: src/runtime/runtime_op.cpp.i
 src/runtime/runtime_op.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_op.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.i
 .PHONY : src/runtime/runtime_op.cpp.i
 
 src/runtime/runtime_op.s: src/runtime/runtime_op.cpp.s
@@ -338,6 +548,7 @@ src/runtime/runtime_op.s: src/runtime/runtime_op.cpp.s
 src/runtime/runtime_op.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/runtime/runtime_op.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.s
 .PHONY : src/runtime/runtime_op.cpp.s
 
 src/store_zip.o: src/store_zip.cpp.o
@@ -347,6 +558,7 @@ src/store_zip.o: src/store_zip.cpp.o
 src/store_zip.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/store_zip.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/store_zip.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/store_zip.cpp.o
 .PHONY : src/store_zip.cpp.o
 
 src/store_zip.i: src/store_zip.cpp.i
@@ -356,6 +568,7 @@ src/store_zip.i: src/store_zip.cpp.i
 src/store_zip.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/store_zip.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/store_zip.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/store_zip.cpp.i
 .PHONY : src/store_zip.cpp.i
 
 src/store_zip.s: src/store_zip.cpp.s
@@ -365,6 +578,7 @@ src/store_zip.s: src/store_zip.cpp.s
 src/store_zip.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/store_zip.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/store_zip.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/store_zip.cpp.s
 .PHONY : src/store_zip.cpp.s
 
 src/tensor_util.o: src/tensor_util.cpp.o
@@ -374,6 +588,7 @@ src/tensor_util.o: src/tensor_util.cpp.o
 src/tensor_util.cpp.o:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/tensor_util.cpp.o
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/tensor_util.cpp.o
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/tensor_util.cpp.o
 .PHONY : src/tensor_util.cpp.o
 
 src/tensor_util.i: src/tensor_util.cpp.i
@@ -383,6 +598,7 @@ src/tensor_util.i: src/tensor_util.cpp.i
 src/tensor_util.cpp.i:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/tensor_util.cpp.i
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/tensor_util.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/tensor_util.cpp.i
 .PHONY : src/tensor_util.cpp.i
 
 src/tensor_util.s: src/tensor_util.cpp.s
@@ -392,6 +608,7 @@ src/tensor_util.s: src/tensor_util.cpp.s
 src/tensor_util.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/src/tensor_util.cpp.s
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_build.dir/build.make CMakeFiles/graph_build.dir/src/tensor_util.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/src/tensor_util.cpp.s
 .PHONY : src/tensor_util.cpp.s
 
 test/graph_build.o: test/graph_build.cpp.o
@@ -442,6 +659,30 @@ test/graph_test.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/graph_test.dir/build.make CMakeFiles/graph_test.dir/test/graph_test.cpp.s
 .PHONY : test/graph_test.cpp.s
 
+test/layer_test.o: test/layer_test.cpp.o
+.PHONY : test/layer_test.o
+
+# target to build an object file
+test/layer_test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/test/layer_test.cpp.o
+.PHONY : test/layer_test.cpp.o
+
+test/layer_test.i: test/layer_test.cpp.i
+.PHONY : test/layer_test.i
+
+# target to preprocess a source file
+test/layer_test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/test/layer_test.cpp.i
+.PHONY : test/layer_test.cpp.i
+
+test/layer_test.s: test/layer_test.cpp.s
+.PHONY : test/layer_test.s
+
+# target to generate assembly for a file
+test/layer_test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/layer_test.dir/build.make CMakeFiles/layer_test.dir/test/layer_test.cpp.s
+.PHONY : test/layer_test.cpp.s
+
 test/tensor_test.o: test/tensor_test.cpp.o
 .PHONY : test/tensor_test.o
 
@@ -478,6 +719,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... graph_build"
 	@echo "... graph_test"
+	@echo "... layer_test"
 	@echo "... tensor_test"
 	@echo "... src/Tensor.o"
 	@echo "... src/Tensor.i"
@@ -485,6 +727,24 @@ help:
 	@echo "... src/ir.o"
 	@echo "... src/ir.i"
 	@echo "... src/ir.s"
+	@echo "... src/layer/abstract/layer.o"
+	@echo "... src/layer/abstract/layer.i"
+	@echo "... src/layer/abstract/layer.s"
+	@echo "... src/layer/abstract/layer_factory.o"
+	@echo "... src/layer/abstract/layer_factory.i"
+	@echo "... src/layer/abstract/layer_factory.s"
+	@echo "... src/layer/abstract/non_param_layer.o"
+	@echo "... src/layer/abstract/non_param_layer.i"
+	@echo "... src/layer/abstract/non_param_layer.s"
+	@echo "... src/layer/abstract/param_layer.o"
+	@echo "... src/layer/abstract/param_layer.i"
+	@echo "... src/layer/abstract/param_layer.s"
+	@echo "... src/layer/detail/relu.o"
+	@echo "... src/layer/detail/relu.i"
+	@echo "... src/layer/detail/relu.s"
+	@echo "... src/layer/detail/sigmoid.o"
+	@echo "... src/layer/detail/sigmoid.i"
+	@echo "... src/layer/detail/sigmoid.s"
 	@echo "... src/load_data.o"
 	@echo "... src/load_data.i"
 	@echo "... src/load_data.s"
@@ -509,6 +769,9 @@ help:
 	@echo "... test/graph_test.o"
 	@echo "... test/graph_test.i"
 	@echo "... test/graph_test.s"
+	@echo "... test/layer_test.o"
+	@echo "... test/layer_test.i"
+	@echo "... test/layer_test.s"
 	@echo "... test/tensor_test.o"
 	@echo "... test/tensor_test.i"
 	@echo "... test/tensor_test.s"

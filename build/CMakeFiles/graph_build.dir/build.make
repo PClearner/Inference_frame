@@ -83,24 +83,10 @@ CMakeFiles/graph_build.dir/test/graph_build.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/test/graph_build.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/test/graph_build.cpp -o CMakeFiles/graph_build.dir/test/graph_build.cpp.s
 
-CMakeFiles/graph_build.dir/src/Tensor.cpp.o: CMakeFiles/graph_build.dir/flags.make
-CMakeFiles/graph_build.dir/src/Tensor.cpp.o: /root/star/inference/inference_frame/src/Tensor.cpp
-CMakeFiles/graph_build.dir/src/Tensor.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graph_build.dir/src/Tensor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/Tensor.cpp.o -MF CMakeFiles/graph_build.dir/src/Tensor.cpp.o.d -o CMakeFiles/graph_build.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp
-
-CMakeFiles/graph_build.dir/src/Tensor.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/Tensor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/Tensor.cpp > CMakeFiles/graph_build.dir/src/Tensor.cpp.i
-
-CMakeFiles/graph_build.dir/src/Tensor.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/Tensor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/Tensor.cpp -o CMakeFiles/graph_build.dir/src/Tensor.cpp.s
-
 CMakeFiles/graph_build.dir/src/ir.cpp.o: CMakeFiles/graph_build.dir/flags.make
 CMakeFiles/graph_build.dir/src/ir.cpp.o: /root/star/inference/inference_frame/src/ir.cpp
 CMakeFiles/graph_build.dir/src/ir.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graph_build.dir/src/ir.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/graph_build.dir/src/ir.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/ir.cpp.o -MF CMakeFiles/graph_build.dir/src/ir.cpp.o.d -o CMakeFiles/graph_build.dir/src/ir.cpp.o -c /root/star/inference/inference_frame/src/ir.cpp
 
 CMakeFiles/graph_build.dir/src/ir.cpp.i: cmake_force
@@ -114,7 +100,7 @@ CMakeFiles/graph_build.dir/src/ir.cpp.s: cmake_force
 CMakeFiles/graph_build.dir/src/load_data.cpp.o: CMakeFiles/graph_build.dir/flags.make
 CMakeFiles/graph_build.dir/src/load_data.cpp.o: /root/star/inference/inference_frame/src/load_data.cpp
 CMakeFiles/graph_build.dir/src/load_data.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graph_build.dir/src/load_data.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/graph_build.dir/src/load_data.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/load_data.cpp.o -MF CMakeFiles/graph_build.dir/src/load_data.cpp.o.d -o CMakeFiles/graph_build.dir/src/load_data.cpp.o -c /root/star/inference/inference_frame/src/load_data.cpp
 
 CMakeFiles/graph_build.dir/src/load_data.cpp.i: cmake_force
@@ -128,7 +114,7 @@ CMakeFiles/graph_build.dir/src/load_data.cpp.s: cmake_force
 CMakeFiles/graph_build.dir/src/store_zip.cpp.o: CMakeFiles/graph_build.dir/flags.make
 CMakeFiles/graph_build.dir/src/store_zip.cpp.o: /root/star/inference/inference_frame/src/store_zip.cpp
 CMakeFiles/graph_build.dir/src/store_zip.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graph_build.dir/src/store_zip.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/graph_build.dir/src/store_zip.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/store_zip.cpp.o -MF CMakeFiles/graph_build.dir/src/store_zip.cpp.o.d -o CMakeFiles/graph_build.dir/src/store_zip.cpp.o -c /root/star/inference/inference_frame/src/store_zip.cpp
 
 CMakeFiles/graph_build.dir/src/store_zip.cpp.i: cmake_force
@@ -142,7 +128,7 @@ CMakeFiles/graph_build.dir/src/store_zip.cpp.s: cmake_force
 CMakeFiles/graph_build.dir/src/tensor_util.cpp.o: CMakeFiles/graph_build.dir/flags.make
 CMakeFiles/graph_build.dir/src/tensor_util.cpp.o: /root/star/inference/inference_frame/src/tensor_util.cpp
 CMakeFiles/graph_build.dir/src/tensor_util.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graph_build.dir/src/tensor_util.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/graph_build.dir/src/tensor_util.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/tensor_util.cpp.o -MF CMakeFiles/graph_build.dir/src/tensor_util.cpp.o.d -o CMakeFiles/graph_build.dir/src/tensor_util.cpp.o -c /root/star/inference/inference_frame/src/tensor_util.cpp
 
 CMakeFiles/graph_build.dir/src/tensor_util.cpp.i: cmake_force
@@ -152,6 +138,20 @@ CMakeFiles/graph_build.dir/src/tensor_util.cpp.i: cmake_force
 CMakeFiles/graph_build.dir/src/tensor_util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/tensor_util.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/tensor_util.cpp -o CMakeFiles/graph_build.dir/src/tensor_util.cpp.s
+
+CMakeFiles/graph_build.dir/src/Tensor.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/Tensor.cpp.o: /root/star/inference/inference_frame/src/Tensor.cpp
+CMakeFiles/graph_build.dir/src/Tensor.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/graph_build.dir/src/Tensor.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/Tensor.cpp.o -MF CMakeFiles/graph_build.dir/src/Tensor.cpp.o.d -o CMakeFiles/graph_build.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp
+
+CMakeFiles/graph_build.dir/src/Tensor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/Tensor.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/Tensor.cpp > CMakeFiles/graph_build.dir/src/Tensor.cpp.i
+
+CMakeFiles/graph_build.dir/src/Tensor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/Tensor.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/Tensor.cpp -o CMakeFiles/graph_build.dir/src/Tensor.cpp.s
 
 CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.o: CMakeFiles/graph_build.dir/flags.make
 CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.o: /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp
@@ -195,35 +195,131 @@ CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/runtime/runtime_op.cpp -o CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.s
 
+CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o: /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp
+CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp
+
+CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp > CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp -o CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.s
+
+CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o: /root/star/inference/inference_frame/src/layer/abstract/layer.cpp
+CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer.cpp
+
+CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/abstract/layer.cpp > CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/abstract/layer.cpp -o CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.s
+
+CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o: /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp
+CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp
+
+CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp > CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp -o CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.s
+
+CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o: /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp
+CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp
+
+CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp > CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp -o CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.s
+
+CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o: /root/star/inference/inference_frame/src/layer/detail/relu.cpp
+CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/relu.cpp
+
+CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/relu.cpp > CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/relu.cpp -o CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.s
+
+CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o: /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp
+CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp
+
+CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp > CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp -o CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.s
+
 # Object files for target graph_build
 graph_build_OBJECTS = \
 "CMakeFiles/graph_build.dir/test/graph_build.cpp.o" \
-"CMakeFiles/graph_build.dir/src/Tensor.cpp.o" \
 "CMakeFiles/graph_build.dir/src/ir.cpp.o" \
 "CMakeFiles/graph_build.dir/src/load_data.cpp.o" \
 "CMakeFiles/graph_build.dir/src/store_zip.cpp.o" \
 "CMakeFiles/graph_build.dir/src/tensor_util.cpp.o" \
+"CMakeFiles/graph_build.dir/src/Tensor.cpp.o" \
 "CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.o" \
 "CMakeFiles/graph_build.dir/src/runtime/runtime_ir.cpp.o" \
-"CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.o"
+"CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o"
 
 # External object files for target graph_build
 graph_build_EXTERNAL_OBJECTS =
 
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/test/graph_build.cpp.o
-/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/Tensor.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/ir.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/load_data.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/store_zip.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/tensor_util.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/Tensor.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/runtime/runtime_ir.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/build.make
 /root/star/inference/inference_frame/bin/graph/graph_build: /usr/local/lib/libglog.so.0.8.0
 /root/star/inference/inference_frame/bin/graph/graph_build: /usr/lib/x86_64-linux-gnu/libarmadillo.so
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable /root/star/inference/inference_frame/bin/graph/graph_build"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable /root/star/inference/inference_frame/bin/graph/graph_build"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graph_build.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

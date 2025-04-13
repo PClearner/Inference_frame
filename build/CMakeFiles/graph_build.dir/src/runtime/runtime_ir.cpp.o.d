@@ -883,5 +883,7 @@ CMakeFiles/graph_build.dir/src/runtime/runtime_ir.cpp.o: \
  /root/star/inference/inference_frame/include/runtime/runtime_parameter.hpp \
  /usr/include/c++/9/queue /usr/include/c++/9/deque \
  /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
- /usr/include/c++/9/bits/stl_queue.h /usr/include/c++/9/stack \
- /usr/include/c++/9/bits/stl_stack.h
+ /usr/include/c++/9/bits/stl_queue.h \
+ /root/star/inference/inference_frame/include/layer/abstract/layer_factory.hpp \
+ /root/star/inference/inference_frame/include/layer/abstract/layer.hpp \
+ /usr/include/c++/9/stack /usr/include/c++/9/bits/stl_stack.h

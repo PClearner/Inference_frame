@@ -66,4 +66,5 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/tensor_test.dir/DependInfo.cmake"
   "CMakeFiles/graph_test.dir/DependInfo.cmake"
   "CMakeFiles/graph_build.dir/DependInfo.cmake"
+  "CMakeFiles/layer_test.dir/DependInfo.cmake"
   )

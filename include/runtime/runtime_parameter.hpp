@@ -19,15 +19,15 @@ namespace star
     { /// 计算节点中的参数信息
         virtual ~RuntimeParameter() = default;
 
-        explicit RuntimeParameter(RuntimeParameterType type = RuntimeParameterType::kParameterUnknown) : type(type)
+        explicit RuntimeParameter(RuntimeParameterType type = RuntimeParameterType::ParameterUnknown) : type(type)
         {
         }
-        RuntimeParameterType type = RuntimeParameterType::kParameterUnknown;
+        RuntimeParameterType type = RuntimeParameterType::ParameterUnknown;
     };
 
     struct RuntimeParameterInt : public RuntimeParameter
     {
-        RuntimeParameterInt() : RuntimeParameter(RuntimeParameterType::kParameterInt)
+        RuntimeParameterInt() : RuntimeParameter(RuntimeParameterType::ParameterInt)
         {
         }
         int value = 0;
@@ -35,7 +35,7 @@ namespace star
 
     struct RuntimeParameterFloat : public RuntimeParameter
     {
-        RuntimeParameterFloat() : RuntimeParameter(RuntimeParameterType::kParameterFloat)
+        RuntimeParameterFloat() : RuntimeParameter(RuntimeParameterType::ParameterFloat)
         {
         }
         float value = 0.f;
@@ -43,7 +43,7 @@ namespace star
 
     struct RuntimeParameterString : public RuntimeParameter
     {
-        RuntimeParameterString() : RuntimeParameter(RuntimeParameterType::kParameterString)
+        RuntimeParameterString() : RuntimeParameter(RuntimeParameterType::ParameterString)
         {
         }
         std::string value;
@@ -51,7 +51,7 @@ namespace star
 
     struct RuntimeParameterIntArray : public RuntimeParameter
     {
-        RuntimeParameterIntArray() : RuntimeParameter(RuntimeParameterType::kParameterIntArray)
+        RuntimeParameterIntArray() : RuntimeParameter(RuntimeParameterType::ParameterIntArray)
         {
         }
         std::vector<int> value;
@@ -59,7 +59,7 @@ namespace star
 
     struct RuntimeParameterFloatArray : public RuntimeParameter
     {
-        RuntimeParameterFloatArray() : RuntimeParameter(RuntimeParameterType::kParameterFloatArray)
+        RuntimeParameterFloatArray() : RuntimeParameter(RuntimeParameterType::ParameterFloatArray)
         {
         }
         std::vector<float> value;
@@ -67,7 +67,7 @@ namespace star
 
     struct RuntimeParameterStringArray : public RuntimeParameter
     {
-        RuntimeParameterStringArray() : RuntimeParameter(RuntimeParameterType::kParameterStringArray)
+        RuntimeParameterStringArray() : RuntimeParameter(RuntimeParameterType::ParameterStringArray)
         {
         }
         std::vector<std::string> value;
@@ -75,7 +75,7 @@ namespace star
 
     struct RuntimeParameterBool : public RuntimeParameter
     {
-        RuntimeParameterBool() : RuntimeParameter(RuntimeParameterType::kParameterBool)
+        RuntimeParameterBool() : RuntimeParameter(RuntimeParameterType::ParameterBool)
         {
         }
         bool value = false;
