@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/star/inference/inference_frame
+CMAKE_SOURCE_DIR = /root/star/inference/Inference_frame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/star/inference/inference_frame/build
+CMAKE_BINARY_DIR = /root/star/inference/Inference_frame/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/layer_test.dir/depend.make
@@ -70,256 +70,256 @@ include CMakeFiles/layer_test.dir/progress.make
 include CMakeFiles/layer_test.dir/flags.make
 
 CMakeFiles/layer_test.dir/test/layer_test.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/test/layer_test.cpp.o: /root/star/inference/inference_frame/test/layer_test.cpp
+CMakeFiles/layer_test.dir/test/layer_test.cpp.o: /root/star/inference/Inference_frame/test/layer_test.cpp
 CMakeFiles/layer_test.dir/test/layer_test.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/layer_test.dir/test/layer_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/test/layer_test.cpp.o -MF CMakeFiles/layer_test.dir/test/layer_test.cpp.o.d -o CMakeFiles/layer_test.dir/test/layer_test.cpp.o -c /root/star/inference/inference_frame/test/layer_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/layer_test.dir/test/layer_test.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/test/layer_test.cpp.o -MF CMakeFiles/layer_test.dir/test/layer_test.cpp.o.d -o CMakeFiles/layer_test.dir/test/layer_test.cpp.o -c /root/star/inference/Inference_frame/test/layer_test.cpp
 
 CMakeFiles/layer_test.dir/test/layer_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/test/layer_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/test/layer_test.cpp > CMakeFiles/layer_test.dir/test/layer_test.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/test/layer_test.cpp > CMakeFiles/layer_test.dir/test/layer_test.cpp.i
 
 CMakeFiles/layer_test.dir/test/layer_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/test/layer_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/test/layer_test.cpp -o CMakeFiles/layer_test.dir/test/layer_test.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/test/layer_test.cpp -o CMakeFiles/layer_test.dir/test/layer_test.cpp.s
 
 CMakeFiles/layer_test.dir/src/ir.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/ir.cpp.o: /root/star/inference/inference_frame/src/ir.cpp
+CMakeFiles/layer_test.dir/src/ir.cpp.o: /root/star/inference/Inference_frame/src/ir.cpp
 CMakeFiles/layer_test.dir/src/ir.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/layer_test.dir/src/ir.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/ir.cpp.o -MF CMakeFiles/layer_test.dir/src/ir.cpp.o.d -o CMakeFiles/layer_test.dir/src/ir.cpp.o -c /root/star/inference/inference_frame/src/ir.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/layer_test.dir/src/ir.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/ir.cpp.o -MF CMakeFiles/layer_test.dir/src/ir.cpp.o.d -o CMakeFiles/layer_test.dir/src/ir.cpp.o -c /root/star/inference/Inference_frame/src/ir.cpp
 
 CMakeFiles/layer_test.dir/src/ir.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/ir.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/ir.cpp > CMakeFiles/layer_test.dir/src/ir.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/ir.cpp > CMakeFiles/layer_test.dir/src/ir.cpp.i
 
 CMakeFiles/layer_test.dir/src/ir.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/ir.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/ir.cpp -o CMakeFiles/layer_test.dir/src/ir.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/ir.cpp -o CMakeFiles/layer_test.dir/src/ir.cpp.s
 
 CMakeFiles/layer_test.dir/src/load_data.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/load_data.cpp.o: /root/star/inference/inference_frame/src/load_data.cpp
+CMakeFiles/layer_test.dir/src/load_data.cpp.o: /root/star/inference/Inference_frame/src/load_data.cpp
 CMakeFiles/layer_test.dir/src/load_data.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/layer_test.dir/src/load_data.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/load_data.cpp.o -MF CMakeFiles/layer_test.dir/src/load_data.cpp.o.d -o CMakeFiles/layer_test.dir/src/load_data.cpp.o -c /root/star/inference/inference_frame/src/load_data.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/layer_test.dir/src/load_data.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/load_data.cpp.o -MF CMakeFiles/layer_test.dir/src/load_data.cpp.o.d -o CMakeFiles/layer_test.dir/src/load_data.cpp.o -c /root/star/inference/Inference_frame/src/load_data.cpp
 
 CMakeFiles/layer_test.dir/src/load_data.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/load_data.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/load_data.cpp > CMakeFiles/layer_test.dir/src/load_data.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/load_data.cpp > CMakeFiles/layer_test.dir/src/load_data.cpp.i
 
 CMakeFiles/layer_test.dir/src/load_data.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/load_data.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/load_data.cpp -o CMakeFiles/layer_test.dir/src/load_data.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/load_data.cpp -o CMakeFiles/layer_test.dir/src/load_data.cpp.s
 
 CMakeFiles/layer_test.dir/src/store_zip.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/store_zip.cpp.o: /root/star/inference/inference_frame/src/store_zip.cpp
+CMakeFiles/layer_test.dir/src/store_zip.cpp.o: /root/star/inference/Inference_frame/src/store_zip.cpp
 CMakeFiles/layer_test.dir/src/store_zip.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/layer_test.dir/src/store_zip.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/store_zip.cpp.o -MF CMakeFiles/layer_test.dir/src/store_zip.cpp.o.d -o CMakeFiles/layer_test.dir/src/store_zip.cpp.o -c /root/star/inference/inference_frame/src/store_zip.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/layer_test.dir/src/store_zip.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/store_zip.cpp.o -MF CMakeFiles/layer_test.dir/src/store_zip.cpp.o.d -o CMakeFiles/layer_test.dir/src/store_zip.cpp.o -c /root/star/inference/Inference_frame/src/store_zip.cpp
 
 CMakeFiles/layer_test.dir/src/store_zip.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/store_zip.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/store_zip.cpp > CMakeFiles/layer_test.dir/src/store_zip.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/store_zip.cpp > CMakeFiles/layer_test.dir/src/store_zip.cpp.i
 
 CMakeFiles/layer_test.dir/src/store_zip.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/store_zip.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/store_zip.cpp -o CMakeFiles/layer_test.dir/src/store_zip.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/store_zip.cpp -o CMakeFiles/layer_test.dir/src/store_zip.cpp.s
 
 CMakeFiles/layer_test.dir/src/tensor_util.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/tensor_util.cpp.o: /root/star/inference/inference_frame/src/tensor_util.cpp
+CMakeFiles/layer_test.dir/src/tensor_util.cpp.o: /root/star/inference/Inference_frame/src/tensor_util.cpp
 CMakeFiles/layer_test.dir/src/tensor_util.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/layer_test.dir/src/tensor_util.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/tensor_util.cpp.o -MF CMakeFiles/layer_test.dir/src/tensor_util.cpp.o.d -o CMakeFiles/layer_test.dir/src/tensor_util.cpp.o -c /root/star/inference/inference_frame/src/tensor_util.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/layer_test.dir/src/tensor_util.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/tensor_util.cpp.o -MF CMakeFiles/layer_test.dir/src/tensor_util.cpp.o.d -o CMakeFiles/layer_test.dir/src/tensor_util.cpp.o -c /root/star/inference/Inference_frame/src/tensor_util.cpp
 
 CMakeFiles/layer_test.dir/src/tensor_util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/tensor_util.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/tensor_util.cpp > CMakeFiles/layer_test.dir/src/tensor_util.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/tensor_util.cpp > CMakeFiles/layer_test.dir/src/tensor_util.cpp.i
 
 CMakeFiles/layer_test.dir/src/tensor_util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/tensor_util.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/tensor_util.cpp -o CMakeFiles/layer_test.dir/src/tensor_util.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/tensor_util.cpp -o CMakeFiles/layer_test.dir/src/tensor_util.cpp.s
 
 CMakeFiles/layer_test.dir/src/Tensor.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/Tensor.cpp.o: /root/star/inference/inference_frame/src/Tensor.cpp
+CMakeFiles/layer_test.dir/src/Tensor.cpp.o: /root/star/inference/Inference_frame/src/Tensor.cpp
 CMakeFiles/layer_test.dir/src/Tensor.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/layer_test.dir/src/Tensor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/Tensor.cpp.o -MF CMakeFiles/layer_test.dir/src/Tensor.cpp.o.d -o CMakeFiles/layer_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/layer_test.dir/src/Tensor.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/Tensor.cpp.o -MF CMakeFiles/layer_test.dir/src/Tensor.cpp.o.d -o CMakeFiles/layer_test.dir/src/Tensor.cpp.o -c /root/star/inference/Inference_frame/src/Tensor.cpp
 
 CMakeFiles/layer_test.dir/src/Tensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/Tensor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/Tensor.cpp > CMakeFiles/layer_test.dir/src/Tensor.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/Tensor.cpp > CMakeFiles/layer_test.dir/src/Tensor.cpp.i
 
 CMakeFiles/layer_test.dir/src/Tensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/Tensor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/Tensor.cpp -o CMakeFiles/layer_test.dir/src/Tensor.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/Tensor.cpp -o CMakeFiles/layer_test.dir/src/Tensor.cpp.s
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o: /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp
+CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o: /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp
 CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o -MF CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o.d -o CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o -MF CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o.d -o CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp > CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp > CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.i
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp -o CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp -o CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.s
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o: /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp
+CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o: /root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp
 CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o -MF CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o.d -o CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o -MF CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o.d -o CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp > CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp > CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.i
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp -o CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp -o CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.s
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o: /root/star/inference/inference_frame/src/runtime/runtime_op.cpp
+CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o: /root/star/inference/Inference_frame/src/runtime/runtime_op.cpp
 CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o -MF CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o.d -o CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_op.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o -MF CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o.d -o CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_op.cpp
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/runtime/runtime_op.cpp > CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/runtime/runtime_op.cpp > CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.i
 
 CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/runtime/runtime_op.cpp -o CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/runtime/runtime_op.cpp -o CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o: /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp
+CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o: /root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp
 CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp
 
 CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp > CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp > CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp -o CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp -o CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o: /root/star/inference/inference_frame/src/layer/abstract/layer.cpp
+CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o: /root/star/inference/Inference_frame/src/layer/abstract/layer.cpp
 CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer.cpp
 
 CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/abstract/layer.cpp > CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/abstract/layer.cpp > CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/abstract/layer.cpp -o CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/abstract/layer.cpp -o CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o: /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp
+CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o: /root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp
 CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp
 
 CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp > CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp > CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp -o CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp -o CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o: /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp
+CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o: /root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp
 CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp
 
 CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp > CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp > CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp -o CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp -o CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o: /root/star/inference/inference_frame/src/layer/detail/relu.cpp
+CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o: /root/star/inference/Inference_frame/src/layer/detail/relu.cpp
 CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/relu.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/relu.cpp
 
 CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/relu.cpp > CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/detail/relu.cpp > CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/relu.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/detail/relu.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o: /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp
+CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o: /root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp
 CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp
 
 CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp > CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp > CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o: /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp
+CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o: /root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp
 CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp
 
 CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp > CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp > CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o: /root/star/inference/inference_frame/src/layer/detail/convolution.cpp
+CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o: /root/star/inference/Inference_frame/src/layer/detail/convolution.cpp
 CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/convolution.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/convolution.cpp
 
 CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/convolution.cpp > CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/detail/convolution.cpp > CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/convolution.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/detail/convolution.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.s
 
 CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o: CMakeFiles/layer_test.dir/flags.make
-CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o: /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp
+CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o: /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp
 CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp
 
 CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp > CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp > CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.i
 
 CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.s
 
 # Object files for target layer_test
 layer_test_OBJECTS = \
@@ -345,33 +345,33 @@ layer_test_OBJECTS = \
 # External object files for target layer_test
 layer_test_EXTERNAL_OBJECTS =
 
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/test/layer_test.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/ir.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/load_data.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/store_zip.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/tensor_util.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/Tensor.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/build.make
-/root/star/inference/inference_frame/bin/layer/layer_test: /usr/local/lib/libglog.so.0.8.0
-/root/star/inference/inference_frame/bin/layer/layer_test: /usr/lib/x86_64-linux-gnu/libarmadillo.so
-/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable /root/star/inference/inference_frame/bin/layer/layer_test"
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/test/layer_test.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/ir.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/load_data.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/store_zip.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/tensor_util.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/Tensor.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/build.make
+/root/star/inference/Inference_frame/bin/layer/layer_test: /usr/local/lib/libglog.so.0.7.1
+/root/star/inference/Inference_frame/bin/layer/layer_test: /usr/lib/x86_64-linux-gnu/libarmadillo.so
+/root/star/inference/Inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable /root/star/inference/Inference_frame/bin/layer/layer_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/layer_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/layer_test.dir/build: /root/star/inference/inference_frame/bin/layer/layer_test
+CMakeFiles/layer_test.dir/build: /root/star/inference/Inference_frame/bin/layer/layer_test
 .PHONY : CMakeFiles/layer_test.dir/build
 
 CMakeFiles/layer_test.dir/clean:
@@ -379,6 +379,6 @@ CMakeFiles/layer_test.dir/clean:
 .PHONY : CMakeFiles/layer_test.dir/clean
 
 CMakeFiles/layer_test.dir/depend:
-	cd /root/star/inference/inference_frame/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/star/inference/inference_frame /root/star/inference/inference_frame /root/star/inference/inference_frame/build /root/star/inference/inference_frame/build /root/star/inference/inference_frame/build/CMakeFiles/layer_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/star/inference/Inference_frame/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/star/inference/Inference_frame /root/star/inference/Inference_frame /root/star/inference/Inference_frame/build /root/star/inference/Inference_frame/build /root/star/inference/Inference_frame/build/CMakeFiles/layer_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/layer_test.dir/depend
 

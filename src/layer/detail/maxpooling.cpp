@@ -126,11 +126,6 @@ namespace star
             const auto &input = input_data;
             auto &output = output_data;
 
-            const uint32_t output_h = uint32_t(
-                std::floor((int(input_padded_h) - int(pooling_h)) / stride_h_ + 1));
-            const uint32_t output_w = uint32_t(
-                std::floor((int(input_padded_w) - int(pooling_w)) / stride_w_ + 1));
-
             for (uint32_t c = 0; c < input->channels(); c++)
             {
                 arma::fmat &input_matrix = input->slice(c);
@@ -150,7 +145,7 @@ namespace star
                             for (uint32_t h = 0; h < pooling_h; h++)
                             {
                                 float current_max;
-                                if (c + h > this->padding_h_ && r + w > this->padding_w_ &&
+                                if (c + h >= this->padding_h_ && r + w >= this->padding_w_ &&
                                     c + h < input_padded_h - this->padding_h_ && r + w < input_padded_w - this->padding_w_)
                                 {
                                     current_max = *(input_col_ptr + c + h - this->padding_h_);
@@ -167,6 +162,7 @@ namespace star
                 }
             }
         }
+        return InferStatus::InferSuccess;
     }
 
     ParseParameterAttrStatus MaxPoolingLayer::GetInstance(
@@ -243,6 +239,6 @@ namespace star
         return ParseParameterAttrStatus::ParameterAttrParseSuccess;
     }
 
-    LayerRegistererWrapper MaxPoolingwrapper("nn.MaxPooling", MaxPoolingLayer::GetInstance);
+    LayerRegistererWrapper MaxPoolingwrapper("nn.MaxPool2d", MaxPoolingLayer::GetInstance);
 
 }

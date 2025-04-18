@@ -15,47 +15,47 @@ namespace star
 {
     class Layer;
 
-    /// ¼ÆËãÍ¼ÖĞµÄ¼ÆËã½Úµã
+    /// è®¡ç®—å›¾ä¸­çš„è®¡ç®—èŠ‚ç‚¹
     struct RuntimeOperator
     {
         virtual ~RuntimeOperator();
 
         bool has_forward = false;
-        std::string name;             /// ¼ÆËã½ÚµãµÄÃû³Æ
-        std::string type;             /// ¼ÆËã½ÚµãµÄÀàĞÍ
-        std::shared_ptr<Layer> layer; /// ½Úµã¶ÔÓ¦µÄ¼ÆËãLayer
+        std::string name;             /// è®¡ç®—èŠ‚ç‚¹çš„åç§°
+        std::string type;             /// è®¡ç®—èŠ‚ç‚¹çš„ç±»å‹
+        std::shared_ptr<Layer> layer; /// èŠ‚ç‚¹å¯¹åº”çš„è®¡ç®—Layer
 
-        std::vector<std::string> output_names;           /// ½ÚµãµÄÊä³ö½ÚµãÃû³Æ
-        std::shared_ptr<RuntimeOperand> output_operands; /// ½ÚµãµÄÊä³ö²Ù×÷Êı
+        std::vector<std::string> output_names;           /// èŠ‚ç‚¹çš„è¾“å‡ºèŠ‚ç‚¹åç§°
+        std::shared_ptr<RuntimeOperand> output_operands; /// èŠ‚ç‚¹çš„è¾“å‡ºæ“ä½œæ•°
 
         std::map<std::string, std::shared_ptr<RuntimeOperand>>
-            input_operands; /// ½ÚµãµÄÊäÈë²Ù×÷Êı
+            input_operands; /// èŠ‚ç‚¹çš„è¾“å…¥æ“ä½œæ•°
         std::vector<std::shared_ptr<RuntimeOperand>>
-            input_operands_seq; /// ½ÚµãµÄÊäÈë²Ù×÷Êı£¬Ë³ĞòÅÅÁĞ
+            input_operands_seq; /// èŠ‚ç‚¹çš„è¾“å…¥æ“ä½œæ•°ï¼Œé¡ºåºæ’åˆ—
         std::map<std::string, std::shared_ptr<RuntimeOperator>>
-            output_operators; /// Êä³ö½ÚµãµÄÃû×ÖºÍ½Úµã¶ÔÓ¦
+            output_operators; /// è¾“å‡ºèŠ‚ç‚¹çš„åå­—å’ŒèŠ‚ç‚¹å¯¹åº”
 
-        std::map<std::string, std::shared_ptr<RuntimeParameter>> params; /// Ëã×ÓµÄ²ÎÊıĞÅÏ¢
+        std::map<std::string, std::shared_ptr<RuntimeParameter>> params; /// ç®—å­çš„å‚æ•°ä¿¡æ¯
         std::map<std::string, std::shared_ptr<RuntimeAttribute>>
-            attribute; /// Ëã×ÓµÄÊôĞÔĞÅÏ¢£¬ÄÚº¬È¨ÖØĞÅÏ¢
+            attribute; /// ç®—å­çš„å±æ€§ä¿¡æ¯ï¼Œå†…å«æƒé‡ä¿¡æ¯
     };
 
     class RuntimeOperatorUtils
     {
     public:
         /**
-         * Èç¹ûÍ¼ÊÇµÚÒ»´ÎÔËĞĞ£¬Ôò¸ù¾İ½ÚµãÊäÈëoperandµÄĞÎ×´×¼±¸ºÃºóĞøLayer¼ÆËãÖĞËùĞèÒªµÄTensor
-         * Èç¹ûÍ¼ÊÇµÚ¶ş´ÎÒÔÉÏÔËĞĞ£¬Ôò¼ì²éÊäÈëoperandµÄĞÎ×´ºÍoperandÖĞÕÅÁ¿µÄĞÎ×´ÊÇ·ñÆ¥Åä
-         * @param operators ¼ÆËãÍ¼ÖĞµÄ¼ÆËã½Úµã
+         * å¦‚æœå›¾æ˜¯ç¬¬ä¸€æ¬¡è¿è¡Œï¼Œåˆ™æ ¹æ®èŠ‚ç‚¹è¾“å…¥operandçš„å½¢çŠ¶å‡†å¤‡å¥½åç»­Layerè®¡ç®—ä¸­æ‰€éœ€è¦çš„Tensor
+         * å¦‚æœå›¾æ˜¯ç¬¬äºŒæ¬¡ä»¥ä¸Šè¿è¡Œï¼Œåˆ™æ£€æŸ¥è¾“å…¥operandçš„å½¢çŠ¶å’Œoperandä¸­å¼ é‡çš„å½¢çŠ¶æ˜¯å¦åŒ¹é…
+         * @param operators è®¡ç®—å›¾ä¸­çš„è®¡ç®—èŠ‚ç‚¹
          */
         static void InitOperatorInput(
             const std::vector<std::shared_ptr<RuntimeOperator>> &operators);
 
         /**
-         * Èç¹ûÍ¼ÊÇµÚÒ»´ÎÔËĞĞ£¬Ôò¸ù¾İ½ÚµãÊä³öoperandµÄĞÎ×´×¼±¸ºÃºóĞøLayer¼ÆËãÖĞËùĞèÒªµÄTensor
-         * Èç¹ûÍ¼ÊÇµÚ¶ş´ÎÒÔÉÏÔËĞĞ£¬Ôò¼ì²éÊä³öoperandµÄĞÎ×´ºÍoperandÖĞÕÅÁ¿µÄĞÎ×´ÊÇ·ñÆ¥Åä
-         * @param pnnx_operators pnnxÍ¼½Úµã
-         * @param operators KuiperInfer¼ÆËãÍ¼ÖĞµÄ¼ÆËã½Úµã
+         * å¦‚æœå›¾æ˜¯ç¬¬ä¸€æ¬¡è¿è¡Œï¼Œåˆ™æ ¹æ®èŠ‚ç‚¹è¾“å‡ºoperandçš„å½¢çŠ¶å‡†å¤‡å¥½åç»­Layerè®¡ç®—ä¸­æ‰€éœ€è¦çš„Tensor
+         * å¦‚æœå›¾æ˜¯ç¬¬äºŒæ¬¡ä»¥ä¸Šè¿è¡Œï¼Œåˆ™æ£€æŸ¥è¾“å‡ºoperandçš„å½¢çŠ¶å’Œoperandä¸­å¼ é‡çš„å½¢çŠ¶æ˜¯å¦åŒ¹é…
+         * @param pnnx_operators pnnxå›¾èŠ‚ç‚¹
+         * @param operators KuiperInferè®¡ç®—å›¾ä¸­çš„è®¡ç®—èŠ‚ç‚¹
          */
         static void InitOperatorOutput(
             const std::vector<pnnx::Operator *> &pnnx_operators,

@@ -8,12 +8,12 @@
 
 namespace star
 {
-    /// ¼ÆËã½ÚµãÊäÈëÊä³öµÄ²Ù×÷Êı
+    /// è®¡ç®—èŠ‚ç‚¹è¾“å…¥è¾“å‡ºçš„æ“ä½œæ•°
     struct RuntimeOperand
     {
-        std::string name;                                     /// ²Ù×÷ÊıµÄÃû³Æ
-        std::vector<int32_t> shapes;                          /// ²Ù×÷ÊıµÄĞÎ×´
-        std::vector<std::shared_ptr<Tensor<float>>> datas;    /// ´æ´¢²Ù×÷Êı
-        RuntimeDataType type = RuntimeDataType::kTypeUnknown; /// ²Ù×÷ÊıµÄÀàĞÍ£¬Ò»°ãÊÇfloat
+        std::string name;                                    /// æ“ä½œæ•°çš„åç§°
+        std::vector<int32_t> shapes;                         /// æ“ä½œæ•°çš„å½¢çŠ¶
+        std::vector<std::shared_ptr<Tensor<float>>> datas;   /// å­˜å‚¨æ“ä½œæ•°
+        RuntimeDataType type = RuntimeDataType::TypeUnknown; /// æ“ä½œæ•°çš„ç±»å‹ï¼Œä¸€èˆ¬æ˜¯float
     };
 }

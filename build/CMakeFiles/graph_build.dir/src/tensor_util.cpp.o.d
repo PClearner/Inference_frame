@@ -1,7 +1,7 @@
 CMakeFiles/graph_build.dir/src/tensor_util.cpp.o: \
- /root/star/inference/inference_frame/src/tensor_util.cpp \
+ /root/star/inference/Inference_frame/src/tensor_util.cpp \
  /usr/include/stdc-predef.h \
- /root/star/inference/inference_frame/include/tensor_util.hpp \
+ /root/star/inference/Inference_frame/include/tensor_util.hpp \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -143,7 +143,7 @@ CMakeFiles/graph_build.dir/src/tensor_util.cpp.o: \
  /usr/include/c++/9/utility /usr/include/c++/9/bits/stl_relops.h \
  /usr/include/c++/9/array /usr/include/c++/9/bits/uses_allocator.h \
  /usr/include/c++/9/bits/invoke.h \
- /root/star/inference/inference_frame/include/Tensor.h \
+ /root/star/inference/Inference_frame/include/Tensor.h \
  /usr/include/armadillo /usr/include/armadillo_bits/config.hpp \
  /usr/include/armadillo_bits/compiler_check.hpp \
  /usr/include/c++/9/cstddef /usr/include/c++/9/cstring \

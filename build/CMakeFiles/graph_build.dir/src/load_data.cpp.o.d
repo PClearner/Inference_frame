@@ -1,7 +1,7 @@
 CMakeFiles/graph_build.dir/src/load_data.cpp.o: \
- /root/star/inference/inference_frame/src/load_data.cpp \
+ /root/star/inference/Inference_frame/src/load_data.cpp \
  /usr/include/stdc-predef.h \
- /root/star/inference/inference_frame/include/load_data.hpp \
+ /root/star/inference/Inference_frame/include/load_data.hpp \
  /usr/include/armadillo /usr/include/armadillo_bits/config.hpp \
  /usr/include/armadillo_bits/compiler_check.hpp \
  /usr/include/c++/9/cstdlib \

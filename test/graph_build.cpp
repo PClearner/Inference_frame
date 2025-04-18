@@ -5,7 +5,7 @@
 #include "runtime/runtime_operand.hpp"
 #include "runtime/runtime_op.hpp"
 #include "runtime/runtime_ir.hpp"
-#include <gtest/gtest.h>
+// #include <gtest/gtest.h>
 
 using namespace star;
 static std::string ShapeStr(const std::vector<int> &shapes)

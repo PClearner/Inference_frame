@@ -1,7 +1,7 @@
 CMakeFiles/graph_test.dir/src/ir.cpp.o: \
- /root/star/inference/inference_frame/src/ir.cpp \
+ /root/star/inference/Inference_frame/src/ir.cpp \
  /usr/include/stdc-predef.h \
- /root/star/inference/inference_frame/include/runtime/ir.h \
+ /root/star/inference/Inference_frame/include/runtime/ir.h \
  /usr/include/c++/9/initializer_list \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -183,4 +183,4 @@ CMakeFiles/graph_test.dir/src/ir.cpp.o: \
  /usr/include/c++/9/bits/sstream.tcc /usr/include/c++/9/stack \
  /usr/include/c++/9/deque /usr/include/c++/9/bits/stl_deque.h \
  /usr/include/c++/9/bits/deque.tcc /usr/include/c++/9/bits/stl_stack.h \
- /root/star/inference/inference_frame/include/store_zip.hpp
+ /root/star/inference/Inference_frame/include/store_zip.hpp

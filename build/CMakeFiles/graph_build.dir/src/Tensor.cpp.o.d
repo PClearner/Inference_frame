@@ -1,7 +1,7 @@
 CMakeFiles/graph_build.dir/src/Tensor.cpp.o: \
- /root/star/inference/inference_frame/src/Tensor.cpp \
+ /root/star/inference/Inference_frame/src/Tensor.cpp \
  /usr/include/stdc-predef.h \
- /root/star/inference/inference_frame/include/Tensor.h \
+ /root/star/inference/Inference_frame/include/Tensor.h \
  /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \

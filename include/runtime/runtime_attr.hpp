@@ -54,6 +54,7 @@ namespace star
         {
             this->ClearWeight();
         }
+        return weight;
     }
 
 }

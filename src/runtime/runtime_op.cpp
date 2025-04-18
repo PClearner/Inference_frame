@@ -32,7 +32,7 @@ namespace star
             {
                 for (const auto &inoperand : op->input_operands_seq)
                 {
-                    CHECK(inoperand->type == RuntimeDataType::kTypeFloat32)
+                    CHECK(inoperand->type == RuntimeDataType::TypeFloat32)
                         << "The graph only support float32 yet!";
                     CHECK(inoperand->shapes.size() == 2 || inoperand->shapes.size() == 3 || inoperand->shapes.size() == 4) << "Unsupported tensor shape sizes: " << inoperand->shapes.size();
                     CHECK(inoperand->shapes.at(0) >= 0) << "Dynamic batch size is not supported!";
@@ -86,7 +86,7 @@ namespace star
             {
                 op->output_operands = std::make_shared<RuntimeOperand>();
                 op->output_operands->name = tt->name + "_output";
-                op->output_operands->type = RuntimeDataType::kTypeFloat32;
+                op->output_operands->type = RuntimeDataType::TypeFloat32;
                 op->output_operands->shapes = tt->shape;
                 for (int32_t i = 0; i < op->output_operands->shapes.at(0); i++)
                 {
@@ -110,7 +110,7 @@ namespace star
             {
                 CHECK(op->output_operands->datas.size() == op->output_operands->shapes.at(0));
                 CHECK(op->output_operands->name == tt->name);
-                CHECK(op->output_operands->type == RuntimeDataType::kTypeFloat32);
+                CHECK(op->output_operands->type == RuntimeDataType::TypeFloat32);
                 CHECK(op->output_operands->shapes == tt->shape);
                 for (const auto &tmp : op->output_operands->datas)
                 {

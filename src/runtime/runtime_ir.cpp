@@ -406,12 +406,12 @@ namespace star
             {
             case 1:
             {
-                oper->type = RuntimeDataType::kTypeFloat32;
+                oper->type = RuntimeDataType::TypeFloat32;
                 break;
             }
             case 0:
             {
-                oper->type = RuntimeDataType::kTypeUnknown;
+                oper->type = RuntimeDataType::TypeUnknown;
                 break;
             }
             default:
@@ -469,12 +469,12 @@ namespace star
             {
             case 1:
             {
-                tmp->type = RuntimeDataType::kTypeFloat32;
+                tmp->type = RuntimeDataType::TypeFloat32;
                 break;
             }
             case 0:
             {
-                tmp->type = RuntimeDataType::kTypeUnknown;
+                tmp->type = RuntimeDataType::TypeUnknown;
                 break;
             }
             default:

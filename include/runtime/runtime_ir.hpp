@@ -12,44 +12,44 @@
 namespace star
 {
 
-    /// ¼ÆËãÍ¼½á¹¹£¬ÓÉ¶à¸ö¼ÆËã½ÚµãºÍ½ÚµãÖ®¼äµÄÊı¾İÁ÷Í¼×é³É
+    /// è®¡ç®—å›¾ç»“æ„ï¼Œç”±å¤šä¸ªè®¡ç®—èŠ‚ç‚¹å’ŒèŠ‚ç‚¹ä¹‹é—´çš„æ•°æ®æµå›¾ç»„æˆ
     class RuntimeGraph
     {
     public:
         /**
-         * ³õÊ¼»¯¼ÆËãÍ¼
-         * @param param_path ¼ÆËãÍ¼µÄ½á¹¹ÎÄ¼ş
-         * @param bin_path ¼ÆËãÍ¼ÖĞµÄÈ¨ÖØÎÄ¼ş
+         * åˆå§‹åŒ–è®¡ç®—å›¾
+         * @param param_path è®¡ç®—å›¾çš„ç»“æ„æ–‡ä»¶
+         * @param bin_path è®¡ç®—å›¾ä¸­çš„æƒé‡æ–‡ä»¶
          */
         RuntimeGraph(std::string param_path, std::string bin_path);
 
         /**
-         * ÉèÖÃÈ¨ÖØÎÄ¼ş
-         * @param bin_path È¨ÖØÎÄ¼şÂ·¾¶
+         * è®¾ç½®æƒé‡æ–‡ä»¶
+         * @param bin_path æƒé‡æ–‡ä»¶è·¯å¾„
          */
         void set_bin_path(const std::string &bin_path);
 
         /**
-         * ÉèÖÃ½á¹¹ÎÄ¼ş
-         * @param param_path  ½á¹¹ÎÄ¼şÂ·¾¶
+         * è®¾ç½®ç»“æ„æ–‡ä»¶
+         * @param param_path  ç»“æ„æ–‡ä»¶è·¯å¾„
          */
         void set_param_path(const std::string &param_path);
 
         /**
-         * ·µ»Ø½á¹¹ÎÄ¼ş
-         * @return ·µ»Ø½á¹¹ÎÄ¼ş
+         * è¿”å›ç»“æ„æ–‡ä»¶
+         * @return è¿”å›ç»“æ„æ–‡ä»¶
          */
         const std::string &param_path() const;
 
         /**
-         * ·µ»ØÈ¨ÖØÎÄ¼ş
-         * @return ·µ»ØÈ¨ÖØÎÄ¼ş
+         * è¿”å›æƒé‡æ–‡ä»¶
+         * @return è¿”å›æƒé‡æ–‡ä»¶
          */
         const std::string &bin_path() const;
 
         /**
-         * ¼ÆËãÍ¼µÄ³õÊ¼»¯
-         * @return ÊÇ·ñ³õÊ¼»¯³É¹¦
+         * è®¡ç®—å›¾çš„åˆå§‹åŒ–
+         * @return æ˜¯å¦åˆå§‹åŒ–æˆåŠŸ
          */
         bool Init();
 
@@ -71,36 +71,36 @@ namespace star
 
     private:
         /**
-         * ³õÊ¼»¯kuiper infer¼ÆËãÍ¼½ÚµãÖĞµÄÊäÈë²Ù×÷Êı
-         * @param inputs pnnxÖĞµÄÊäÈë²Ù×÷Êı
-         * @param runtime_operator ¼ÆËãÍ¼½Úµã
+         * åˆå§‹åŒ–kuiper inferè®¡ç®—å›¾èŠ‚ç‚¹ä¸­çš„è¾“å…¥æ“ä½œæ•°
+         * @param inputs pnnxä¸­çš„è¾“å…¥æ“ä½œæ•°
+         * @param runtime_operator è®¡ç®—å›¾èŠ‚ç‚¹
          */
         static void InitGraphOperatorsInput(
             const std::vector<pnnx::Operand *> &inputs,
             const std::shared_ptr<RuntimeOperator> &runtime_operator);
 
         /**
-         * ³õÊ¼»¯kuiper infer¼ÆËãÍ¼½ÚµãÖĞµÄÊä³ö²Ù×÷Êı
-         * @param outputs pnnxÖĞµÄÊä³ö²Ù×÷Êı
-         * @param runtime_operator ¼ÆËãÍ¼½Úµã
+         * åˆå§‹åŒ–kuiper inferè®¡ç®—å›¾èŠ‚ç‚¹ä¸­çš„è¾“å‡ºæ“ä½œæ•°
+         * @param outputs pnnxä¸­çš„è¾“å‡ºæ“ä½œæ•°
+         * @param runtime_operator è®¡ç®—å›¾èŠ‚ç‚¹
          */
         static void InitGraphOperatorsOutput(
             const std::vector<pnnx::Operand *> &outputs,
             const std::shared_ptr<RuntimeOperator> &runtime_operator);
 
         /**
-         * ³õÊ¼»¯kuiper infer¼ÆËãÍ¼ÖĞµÄ½ÚµãÊôĞÔ
-         * @param attrs pnnxÖĞµÄ½ÚµãÊôĞÔ
-         * @param runtime_operator ¼ÆËãÍ¼½Úµã
+         * åˆå§‹åŒ–kuiper inferè®¡ç®—å›¾ä¸­çš„èŠ‚ç‚¹å±æ€§
+         * @param attrs pnnxä¸­çš„èŠ‚ç‚¹å±æ€§
+         * @param runtime_operator è®¡ç®—å›¾èŠ‚ç‚¹
          */
         static void
         InitGraphAttrs(const std::map<std::string, pnnx::Attribute> &attrs,
                        const std::shared_ptr<RuntimeOperator> &runtime_operator);
 
         /**
-         * ³õÊ¼»¯kuiper infer¼ÆËãÍ¼ÖĞµÄ½Úµã²ÎÊı
-         * @param params pnnxÖĞµÄ²ÎÊıÊôĞÔ
-         * @param runtime_operator ¼ÆËãÍ¼½Úµã
+         * åˆå§‹åŒ–kuiper inferè®¡ç®—å›¾ä¸­çš„èŠ‚ç‚¹å‚æ•°
+         * @param params pnnxä¸­çš„å‚æ•°å±æ€§
+         * @param runtime_operator è®¡ç®—å›¾èŠ‚ç‚¹
          */
         static void
         InitGraphParams(const std::map<std::string, pnnx::Parameter> &params,
@@ -126,21 +126,21 @@ namespace star
 
     public:
         /**
-         * ·µ»ØÄ£ĞÍµ±Ç°µÄ×´Ì¬
-         * @return ·µ»ØÄ£ĞÍµ±Ç°µÄ×´Ì¬
+         * è¿”å›æ¨¡å‹å½“å‰çš„çŠ¶æ€
+         * @return è¿”å›æ¨¡å‹å½“å‰çš„çŠ¶æ€
          */
         GraphState graph_state() const;
 
     private:
-        std::string input_name_;  /// ¼ÆËãÍ¼ÊäÈë½ÚµãµÄÃû³Æ
-        std::string output_name_; /// ¼ÆËãÍ¼Êä³ö½ÚµãµÄÃû³Æ
-        std::string param_path_;  /// ¼ÆËãÍ¼µÄ½á¹¹ÎÄ¼ş
-        std::string bin_path_;    /// ¼ÆËãÍ¼µÄÈ¨ÖØÎÄ¼ş
+        std::string input_name_;  /// è®¡ç®—å›¾è¾“å…¥èŠ‚ç‚¹çš„åç§°
+        std::string output_name_; /// è®¡ç®—å›¾è¾“å‡ºèŠ‚ç‚¹çš„åç§°
+        std::string param_path_;  /// è®¡ç®—å›¾çš„ç»“æ„æ–‡ä»¶
+        std::string bin_path_;    /// è®¡ç®—å›¾çš„æƒé‡æ–‡ä»¶
         GraphState graph_state_ = GraphState::NeedInit;
 
         std::vector<std::shared_ptr<RuntimeOperator>> operators_;
         std::map<std::string, std::shared_ptr<RuntimeOperator>> operators_maps_;
         std::vector<std::shared_ptr<RuntimeOperator>> topo_operators_;
-        std::unique_ptr<pnnx::Graph> graph_; /// pnnxµÄgraph
+        std::unique_ptr<pnnx::Graph> graph_; /// pnnxçš„graph
     };
 }

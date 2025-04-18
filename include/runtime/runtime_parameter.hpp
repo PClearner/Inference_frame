@@ -4,7 +4,7 @@
 #include <vector>
 
 /**
- * 计算节点中的参数信息，参数一共可以分为如下的几类
+ * 璁＄畻鑺傜偣涓殑鍙傛暟淇℃伅锛屽弬鏁颁竴鍏卞彲浠ュ垎涓哄涓嬬殑鍑犵被
  * 1.int
  * 2.float
  * 3.string
@@ -16,7 +16,7 @@
 namespace star
 {
     struct RuntimeParameter
-    { /// 计算节点中的参数信息
+    { /// 璁＄畻鑺傜偣涓殑鍙傛暟淇℃伅
         virtual ~RuntimeParameter() = default;
 
         explicit RuntimeParameter(RuntimeParameterType type = RuntimeParameterType::ParameterUnknown) : type(type)

@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/root/star/inference/inference_frame/src/Tensor.cpp" "CMakeFiles/tensor_test.dir/src/Tensor.cpp.o" "gcc" "CMakeFiles/tensor_test.dir/src/Tensor.cpp.o.d"
-  "/root/star/inference/inference_frame/test/tensor_test.cpp" "CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o" "gcc" "CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o.d"
+  "/root/star/inference/Inference_frame/src/Tensor.cpp" "CMakeFiles/tensor_test.dir/src/Tensor.cpp.o" "gcc" "CMakeFiles/tensor_test.dir/src/Tensor.cpp.o.d"
+  "/root/star/inference/Inference_frame/test/tensor_test.cpp" "CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o" "gcc" "CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o.d"
   )
 
 # Targets to which this target links.

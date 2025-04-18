@@ -1,5 +1,5 @@
 CMakeFiles/graph_test.dir/test/graph_test.cpp.o: \
- /root/star/inference/inference_frame/test/graph_test.cpp \
+ /root/star/inference/Inference_frame/test/graph_test.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -138,7 +138,7 @@ CMakeFiles/graph_test.dir/test/graph_test.cpp.o: \
  /usr/include/c++/9/bits/basic_ios.tcc \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc \
- /root/star/inference/inference_frame/include/load_data.hpp \
+ /root/star/inference/Inference_frame/include/load_data.hpp \
  /usr/include/armadillo /usr/include/armadillo_bits/config.hpp \
  /usr/include/armadillo_bits/compiler_check.hpp \
  /usr/include/c++/9/cstddef /usr/include/c++/9/cstring \
@@ -869,18 +869,18 @@ CMakeFiles/graph_test.dir/test/graph_test.cpp.o: \
  /usr/local/include/glog/platform.h /usr/local/include/glog/types.h \
  /usr/local/include/glog/log_severity.h \
  /usr/local/include/glog/vlog_is_on.h \
- /root/star/inference/inference_frame/include/tensor_util.hpp \
- /root/star/inference/inference_frame/include/Tensor.h \
- /root/star/inference/inference_frame/include/runtime/runtime_attr.hpp \
- /root/star/inference/inference_frame/include/runtime/runtime_datatype.hpp \
- /root/star/inference/inference_frame/include/status_code.hpp \
- /root/star/inference/inference_frame/include/runtime/runtime_operand.hpp \
- /root/star/inference/inference_frame/include/runtime/runtime_op.hpp \
- /root/star/inference/inference_frame/include/runtime/ir.h \
+ /root/star/inference/Inference_frame/include/tensor_util.hpp \
+ /root/star/inference/Inference_frame/include/Tensor.h \
+ /root/star/inference/Inference_frame/include/runtime/runtime_attr.hpp \
+ /root/star/inference/Inference_frame/include/runtime/runtime_datatype.hpp \
+ /root/star/inference/Inference_frame/include/status_code.hpp \
+ /root/star/inference/Inference_frame/include/runtime/runtime_operand.hpp \
+ /root/star/inference/Inference_frame/include/runtime/runtime_op.hpp \
+ /root/star/inference/Inference_frame/include/runtime/ir.h \
  /usr/include/c++/9/set /usr/include/c++/9/bits/stl_set.h \
  /usr/include/c++/9/bits/stl_multiset.h \
- /root/star/inference/inference_frame/include/runtime/runtime_parameter.hpp \
- /root/star/inference/inference_frame/include/runtime/runtime_ir.hpp \
+ /root/star/inference/Inference_frame/include/runtime/runtime_parameter.hpp \
+ /root/star/inference/Inference_frame/include/runtime/runtime_ir.hpp \
  /usr/include/c++/9/queue /usr/include/c++/9/deque \
  /usr/include/c++/9/bits/stl_deque.h /usr/include/c++/9/bits/deque.tcc \
  /usr/include/c++/9/bits/stl_queue.h

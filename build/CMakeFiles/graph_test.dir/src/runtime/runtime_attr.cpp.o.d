@@ -1,7 +1,7 @@
 CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.o: \
- /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp \
+ /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp \
  /usr/include/stdc-predef.h \
- /root/star/inference/inference_frame/include/runtime/runtime_attr.hpp \
+ /root/star/inference/Inference_frame/include/runtime/runtime_attr.hpp \
  /usr/local/include/glog/logging.h /usr/include/c++/9/atomic \
  /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -170,5 +170,5 @@ CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.o: \
  /usr/local/include/glog/platform.h /usr/local/include/glog/types.h \
  /usr/local/include/glog/log_severity.h \
  /usr/local/include/glog/vlog_is_on.h \
- /root/star/inference/inference_frame/include/runtime/runtime_datatype.hpp \
- /root/star/inference/inference_frame/include/status_code.hpp
+ /root/star/inference/Inference_frame/include/runtime/runtime_datatype.hpp \
+ /root/star/inference/Inference_frame/include/status_code.hpp

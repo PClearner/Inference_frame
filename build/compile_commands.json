@@ -1,372 +1,372 @@
 [
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -c /root/star/inference/inference_frame/test/tensor_test.cpp",
-  "file": "/root/star/inference/inference_frame/test/tensor_test.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -c /root/star/inference/Inference_frame/test/tensor_test.cpp",
+  "file": "/root/star/inference/Inference_frame/test/tensor_test.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
-  "file": "/root/star/inference/inference_frame/src/Tensor.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -c /root/star/inference/Inference_frame/src/Tensor.cpp",
+  "file": "/root/star/inference/Inference_frame/src/Tensor.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/test/graph_test.cpp.o -c /root/star/inference/inference_frame/test/graph_test.cpp",
-  "file": "/root/star/inference/inference_frame/test/graph_test.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/test/graph_test.cpp.o -c /root/star/inference/Inference_frame/test/graph_test.cpp",
+  "file": "/root/star/inference/Inference_frame/test/graph_test.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/ir.cpp.o -c /root/star/inference/inference_frame/src/ir.cpp",
-  "file": "/root/star/inference/inference_frame/src/ir.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/ir.cpp.o -c /root/star/inference/Inference_frame/src/ir.cpp",
+  "file": "/root/star/inference/Inference_frame/src/ir.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/load_data.cpp.o -c /root/star/inference/inference_frame/src/load_data.cpp",
-  "file": "/root/star/inference/inference_frame/src/load_data.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/load_data.cpp.o -c /root/star/inference/Inference_frame/src/load_data.cpp",
+  "file": "/root/star/inference/Inference_frame/src/load_data.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/store_zip.cpp.o -c /root/star/inference/inference_frame/src/store_zip.cpp",
-  "file": "/root/star/inference/inference_frame/src/store_zip.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/store_zip.cpp.o -c /root/star/inference/Inference_frame/src/store_zip.cpp",
+  "file": "/root/star/inference/Inference_frame/src/store_zip.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/tensor_util.cpp.o -c /root/star/inference/inference_frame/src/tensor_util.cpp",
-  "file": "/root/star/inference/inference_frame/src/tensor_util.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/tensor_util.cpp.o -c /root/star/inference/Inference_frame/src/tensor_util.cpp",
+  "file": "/root/star/inference/Inference_frame/src/tensor_util.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
-  "file": "/root/star/inference/inference_frame/src/Tensor.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/Tensor.cpp.o -c /root/star/inference/Inference_frame/src/Tensor.cpp",
+  "file": "/root/star/inference/Inference_frame/src/Tensor.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_attr.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_ir.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_op.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_op.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_op.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_op.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/relu.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/relu.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/relu.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/relu.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/convolution.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/convolution.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/convolution.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/convolution.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/test/graph_build.cpp.o -c /root/star/inference/inference_frame/test/graph_build.cpp",
-  "file": "/root/star/inference/inference_frame/test/graph_build.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/test/graph_build.cpp.o -c /root/star/inference/Inference_frame/test/graph_build.cpp",
+  "file": "/root/star/inference/Inference_frame/test/graph_build.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/ir.cpp.o -c /root/star/inference/inference_frame/src/ir.cpp",
-  "file": "/root/star/inference/inference_frame/src/ir.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/ir.cpp.o -c /root/star/inference/Inference_frame/src/ir.cpp",
+  "file": "/root/star/inference/Inference_frame/src/ir.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/load_data.cpp.o -c /root/star/inference/inference_frame/src/load_data.cpp",
-  "file": "/root/star/inference/inference_frame/src/load_data.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/load_data.cpp.o -c /root/star/inference/Inference_frame/src/load_data.cpp",
+  "file": "/root/star/inference/Inference_frame/src/load_data.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/store_zip.cpp.o -c /root/star/inference/inference_frame/src/store_zip.cpp",
-  "file": "/root/star/inference/inference_frame/src/store_zip.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/store_zip.cpp.o -c /root/star/inference/Inference_frame/src/store_zip.cpp",
+  "file": "/root/star/inference/Inference_frame/src/store_zip.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/tensor_util.cpp.o -c /root/star/inference/inference_frame/src/tensor_util.cpp",
-  "file": "/root/star/inference/inference_frame/src/tensor_util.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/tensor_util.cpp.o -c /root/star/inference/Inference_frame/src/tensor_util.cpp",
+  "file": "/root/star/inference/Inference_frame/src/tensor_util.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
-  "file": "/root/star/inference/inference_frame/src/Tensor.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/Tensor.cpp.o -c /root/star/inference/Inference_frame/src/Tensor.cpp",
+  "file": "/root/star/inference/Inference_frame/src/Tensor.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_attr.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_ir.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_op.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_op.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_op.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_op.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/relu.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/relu.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/relu.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/relu.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/convolution.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/convolution.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/convolution.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/convolution.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/test/layer_test.cpp.o -c /root/star/inference/inference_frame/test/layer_test.cpp",
-  "file": "/root/star/inference/inference_frame/test/layer_test.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/test/layer_test.cpp.o -c /root/star/inference/Inference_frame/test/layer_test.cpp",
+  "file": "/root/star/inference/Inference_frame/test/layer_test.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/ir.cpp.o -c /root/star/inference/inference_frame/src/ir.cpp",
-  "file": "/root/star/inference/inference_frame/src/ir.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/ir.cpp.o -c /root/star/inference/Inference_frame/src/ir.cpp",
+  "file": "/root/star/inference/Inference_frame/src/ir.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/load_data.cpp.o -c /root/star/inference/inference_frame/src/load_data.cpp",
-  "file": "/root/star/inference/inference_frame/src/load_data.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/load_data.cpp.o -c /root/star/inference/Inference_frame/src/load_data.cpp",
+  "file": "/root/star/inference/Inference_frame/src/load_data.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/store_zip.cpp.o -c /root/star/inference/inference_frame/src/store_zip.cpp",
-  "file": "/root/star/inference/inference_frame/src/store_zip.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/store_zip.cpp.o -c /root/star/inference/Inference_frame/src/store_zip.cpp",
+  "file": "/root/star/inference/Inference_frame/src/store_zip.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/tensor_util.cpp.o -c /root/star/inference/inference_frame/src/tensor_util.cpp",
-  "file": "/root/star/inference/inference_frame/src/tensor_util.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/tensor_util.cpp.o -c /root/star/inference/Inference_frame/src/tensor_util.cpp",
+  "file": "/root/star/inference/Inference_frame/src/tensor_util.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
-  "file": "/root/star/inference/inference_frame/src/Tensor.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/Tensor.cpp.o -c /root/star/inference/Inference_frame/src/Tensor.cpp",
+  "file": "/root/star/inference/Inference_frame/src/Tensor.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_attr.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_ir.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_op.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_op.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_op.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_op.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/relu.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/relu.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/relu.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/relu.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/convolution.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/convolution.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/convolution.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/convolution.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/test/conv_test.cpp.o -c /root/star/inference/inference_frame/test/conv_test.cpp",
-  "file": "/root/star/inference/inference_frame/test/conv_test.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/test/conv_test.cpp.o -c /root/star/inference/Inference_frame/test/conv_test.cpp",
+  "file": "/root/star/inference/Inference_frame/test/conv_test.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/ir.cpp.o -c /root/star/inference/inference_frame/src/ir.cpp",
-  "file": "/root/star/inference/inference_frame/src/ir.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/ir.cpp.o -c /root/star/inference/Inference_frame/src/ir.cpp",
+  "file": "/root/star/inference/Inference_frame/src/ir.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/load_data.cpp.o -c /root/star/inference/inference_frame/src/load_data.cpp",
-  "file": "/root/star/inference/inference_frame/src/load_data.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/load_data.cpp.o -c /root/star/inference/Inference_frame/src/load_data.cpp",
+  "file": "/root/star/inference/Inference_frame/src/load_data.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/store_zip.cpp.o -c /root/star/inference/inference_frame/src/store_zip.cpp",
-  "file": "/root/star/inference/inference_frame/src/store_zip.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/store_zip.cpp.o -c /root/star/inference/Inference_frame/src/store_zip.cpp",
+  "file": "/root/star/inference/Inference_frame/src/store_zip.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/tensor_util.cpp.o -c /root/star/inference/inference_frame/src/tensor_util.cpp",
-  "file": "/root/star/inference/inference_frame/src/tensor_util.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/tensor_util.cpp.o -c /root/star/inference/Inference_frame/src/tensor_util.cpp",
+  "file": "/root/star/inference/Inference_frame/src/tensor_util.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp",
-  "file": "/root/star/inference/inference_frame/src/Tensor.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/Tensor.cpp.o -c /root/star/inference/Inference_frame/src/Tensor.cpp",
+  "file": "/root/star/inference/Inference_frame/src/Tensor.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_attr.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_attr.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/runtime/runtime_attr.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_attr.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_ir.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_ir.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/runtime/runtime_ir.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_ir.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/inference_frame/src/runtime/runtime_op.cpp",
-  "file": "/root/star/inference/inference_frame/src/runtime/runtime_op.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/runtime/runtime_op.cpp.o -c /root/star/inference/Inference_frame/src/runtime/runtime_op.cpp",
+  "file": "/root/star/inference/Inference_frame/src/runtime/runtime_op.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/layer_factory.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/abstract/layer_factory.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/layer_factory.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/abstract/layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/non_param_layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/abstract/non_param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/non_param_layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/abstract/param_layer.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/abstract/param_layer.cpp.o -c /root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/abstract/param_layer.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/relu.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/relu.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/relu.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/relu.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/relu.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/sigmoid.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/sigmoid.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/maxpooling.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/convolution.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/convolution.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/convolution.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/convolution.cpp"
 },
 {
-  "directory": "/root/star/inference/inference_frame/build",
-  "command": "/usr/bin/c++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp",
-  "file": "/root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp"
+  "directory": "/root/star/inference/Inference_frame/build",
+  "command": "/usr/bin/g++ -DGLOG_USE_GLOG_EXPORT -I/root/star/inference/Inference_frame/include  -Wno-unused-variable -Wno-unused-parameter -g -std=gnu++17 -o CMakeFiles/conv_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp",
+  "file": "/root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp"
 }
 ]

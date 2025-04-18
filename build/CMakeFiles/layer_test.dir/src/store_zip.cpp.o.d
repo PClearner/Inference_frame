@@ -1,7 +1,7 @@
 CMakeFiles/layer_test.dir/src/store_zip.cpp.o: \
- /root/star/inference/inference_frame/src/store_zip.cpp \
+ /root/star/inference/Inference_frame/src/store_zip.cpp \
  /usr/include/stdc-predef.h \
- /root/star/inference/inference_frame/include/store_zip.hpp \
+ /root/star/inference/Inference_frame/include/store_zip.hpp \
  /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
  /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \

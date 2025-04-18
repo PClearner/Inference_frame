@@ -6,13 +6,13 @@ namespace star
                                        uint32_t kernel_h, uint32_t kernel_w,
                                        uint32_t padding_h, uint32_t padding_w,
                                        uint32_t stride_h, uint32_t stride_w,
-                                       uint32_t groups, bool use_bias = true) : ParamLayer("Convolution"),
-                                                                                use_bias_(use_bias),
-                                                                                groups_(groups),
-                                                                                padding_h_(padding_h),
-                                                                                padding_w_(padding_w),
-                                                                                stride_h_(stride_h),
-                                                                                stride_w_(stride_w)
+                                       uint32_t groups, bool use_bias) : ParamLayer("Convolution"),
+                                                                         use_bias_(use_bias),
+                                                                         groups_(groups),
+                                                                         padding_h_(padding_h),
+                                                                         padding_w_(padding_w),
+                                                                         stride_h_(stride_h),
+                                                                         stride_w_(stride_w)
     {
         if (groups != 1)
         {
@@ -187,7 +187,7 @@ namespace star
             return ParseParameterAttrStatus::ParameterMissingKernel;
         }
 
-        conv_layer = std::make_shared<ConvolutionLayer>(out_channel, in_channel, kernels.at(0), kernels.at(1),
+        conv_layer = std::make_shared<ConvolutionLayer>(out_channel->value, in_channel->value, kernels.at(0), kernels.at(1),
                                                         paddings.at(0), paddings.at(1), strides.at(0), strides.at(1),
                                                         groups->value, use_bias->value);
 
@@ -348,7 +348,7 @@ namespace star
             for (uint32_t g = 0; g < this->groups_; g++)
             {
                 const auto &input_matrix = Im2Col(input, kernel_w, kernel_h, input->cols(),
-                                                  input->rows(), input_c_group, this->groups_, row_len, col_len);
+                                                  input->rows(), input_c_group, g, row_len, col_len);
 
                 std::shared_ptr<Tensor<float>> output_tensor = outputs.at(i);
                 if (output_tensor == nullptr || output_tensor->empty())
@@ -372,11 +372,12 @@ namespace star
                 }
             }
         }
+
         return InferStatus::InferSuccess;
     }
 
     /**
-     * 初始化kernel的im2col排布
+     * 鍒濆鍖杒ernel鐨刬m2col鎺掑竷
      */
     void ConvolutionLayer::InitIm2ColWeight()
     {
@@ -397,13 +398,14 @@ namespace star
             CHECK(kernel->cols() == kernel_w);
             CHECK(kernel->channels() == kernel_c);
 
-            arma::frowvec kernel_matrix_c;
+            arma::frowvec kernel_matrix_c(kernel->size());
             for (uint32_t ic = 0; ic < kernel->channels(); ic++)
             {
                 memcpy(kernel_matrix_c.memptr() + ic * row_len, kernel->matrix_raw_ptr(ic), row_len * sizeof(float));
             }
             kernel_matrix_arr.push_back(kernel_matrix_c);
         }
+
         this->kernel_matrix_arr_ = std::move(kernel_matrix_arr);
     }
 
@@ -418,20 +420,23 @@ namespace star
         CHECK(output.size() == output_h * output_w)
             << "Output_h x output_w for the convolution layer "
                "should be output tensor size";
-        for (uint32_t kidx = 0; kidx < this->kernel_matrix_arr_.size(); kidx++)
+        if (!this->bias_.empty() && this->use_bias_)
         {
-            arma::frowvec kernel_matrix = this->kernel_matrix_arr_.at(kidx);
-            if (this->use_bias_ == true)
+            std::shared_ptr<Tensor<float>> bias;
+            bias = this->bias_.at(kernel_index);
+            if (bias != nullptr && !bias->empty())
             {
-                const auto &bias = this->bias_.at(kernel_index);
-                // output = kernel_matrix * input_matrix + bias->slice(0);
                 float bias_value = bias->index(0);
-                output = kernel_matrix * input_matrix + bias_value;
+                output = kernel * input_matrix + bias_value;
             }
             else
             {
-                output = kernel_matrix * input_matrix;
+                LOG(FATAL) << "Bias tensor is empty or nullptr";
             }
+        }
+        else
+        {
+            output = kernel * input_matrix;
         }
     }
 
@@ -443,24 +448,28 @@ namespace star
         const uint32_t input_padded_h = input_h + 2 * padding_h_;
         const uint32_t input_padded_w = input_w + 2 * padding_w_;
         const float padding_value = 0.f;
+
         for (uint32_t ic = 0; ic < input_c_group; ic++)
         {
+
             float *input_slice = input->matrix_raw_ptr(ic + group * input_c_group);
             uint32_t channel_row = ic * row_len;
+            uint32_t current_col = 0;
             for (uint32_t c = 0; c < input_padded_w - kernel_w + 1; c += this->stride_w_)
             {
-
-                auto input_col_ptr = input_matrix.colptr(c / this->stride_w_) + channel_row;
                 for (uint32_t r = 0; r < input_padded_h - kernel_h + 1; r += this->stride_h_)
                 {
+                    auto input_col_ptr = input_matrix.colptr(current_col) + channel_row;
+                    current_col++;
                     for (uint32_t w = 0; w < kernel_w; w++)
                     {
+                        const uint32_t region_w = input_h * (c + w - padding_w_);
                         for (uint32_t h = 0; h < kernel_h; h++)
                         {
-                            if (w + c > this->padding_w_ && w + c < input_w + this->padding_w_ &&
-                                h + r > this->padding_h_ && h + r < input_h + this->padding_h_)
+                            if (w + c >= this->padding_w_ && w + c < input_w + this->padding_w_ &&
+                                h + r >= this->padding_h_ && h + r < input_h + this->padding_h_)
                             {
-                                *(input_col_ptr) = *(input_slice + input_h * (c + w - padding_w_) + r + h - padding_h_);
+                                *(input_col_ptr) = *(input_slice + region_w + r + h - padding_h_);
                             }
                             else
                             {
@@ -472,6 +481,7 @@ namespace star
                 }
             }
         }
+
         return input_matrix;
     }
 }

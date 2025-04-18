@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/star/inference/inference_frame
+CMAKE_SOURCE_DIR = /root/star/inference/Inference_frame
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/star/inference/inference_frame/build
+CMAKE_BINARY_DIR = /root/star/inference/Inference_frame/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/tensor_test.dir/depend.make
@@ -70,32 +70,32 @@ include CMakeFiles/tensor_test.dir/progress.make
 include CMakeFiles/tensor_test.dir/flags.make
 
 CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o: CMakeFiles/tensor_test.dir/flags.make
-CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o: /root/star/inference/inference_frame/test/tensor_test.cpp
+CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o: /root/star/inference/Inference_frame/test/tensor_test.cpp
 CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o: CMakeFiles/tensor_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -MF CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o.d -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -c /root/star/inference/inference_frame/test/tensor_test.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -MF CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o.d -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o -c /root/star/inference/Inference_frame/test/tensor_test.cpp
 
 CMakeFiles/tensor_test.dir/test/tensor_test.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tensor_test.dir/test/tensor_test.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/test/tensor_test.cpp > CMakeFiles/tensor_test.dir/test/tensor_test.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/test/tensor_test.cpp > CMakeFiles/tensor_test.dir/test/tensor_test.cpp.i
 
 CMakeFiles/tensor_test.dir/test/tensor_test.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tensor_test.dir/test/tensor_test.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/test/tensor_test.cpp -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/test/tensor_test.cpp -o CMakeFiles/tensor_test.dir/test/tensor_test.cpp.s
 
 CMakeFiles/tensor_test.dir/src/Tensor.cpp.o: CMakeFiles/tensor_test.dir/flags.make
-CMakeFiles/tensor_test.dir/src/Tensor.cpp.o: /root/star/inference/inference_frame/src/Tensor.cpp
+CMakeFiles/tensor_test.dir/src/Tensor.cpp.o: /root/star/inference/Inference_frame/src/Tensor.cpp
 CMakeFiles/tensor_test.dir/src/Tensor.cpp.o: CMakeFiles/tensor_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tensor_test.dir/src/Tensor.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -MF CMakeFiles/tensor_test.dir/src/Tensor.cpp.o.d -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -c /root/star/inference/inference_frame/src/Tensor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/tensor_test.dir/src/Tensor.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -MF CMakeFiles/tensor_test.dir/src/Tensor.cpp.o.d -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.o -c /root/star/inference/Inference_frame/src/Tensor.cpp
 
 CMakeFiles/tensor_test.dir/src/Tensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/tensor_test.dir/src/Tensor.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/Tensor.cpp > CMakeFiles/tensor_test.dir/src/Tensor.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/Tensor.cpp > CMakeFiles/tensor_test.dir/src/Tensor.cpp.i
 
 CMakeFiles/tensor_test.dir/src/Tensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/tensor_test.dir/src/Tensor.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/Tensor.cpp -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/Tensor.cpp -o CMakeFiles/tensor_test.dir/src/Tensor.cpp.s
 
 # Object files for target tensor_test
 tensor_test_OBJECTS = \
@@ -105,17 +105,17 @@ tensor_test_OBJECTS = \
 # External object files for target tensor_test
 tensor_test_EXTERNAL_OBJECTS =
 
-/root/star/inference/inference_frame/bin/tensor_test: CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o
-/root/star/inference/inference_frame/bin/tensor_test: CMakeFiles/tensor_test.dir/src/Tensor.cpp.o
-/root/star/inference/inference_frame/bin/tensor_test: CMakeFiles/tensor_test.dir/build.make
-/root/star/inference/inference_frame/bin/tensor_test: /usr/local/lib/libglog.so.0.8.0
-/root/star/inference/inference_frame/bin/tensor_test: /usr/lib/x86_64-linux-gnu/libarmadillo.so
-/root/star/inference/inference_frame/bin/tensor_test: CMakeFiles/tensor_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /root/star/inference/inference_frame/bin/tensor_test"
+/root/star/inference/Inference_frame/bin/tensor_test: CMakeFiles/tensor_test.dir/test/tensor_test.cpp.o
+/root/star/inference/Inference_frame/bin/tensor_test: CMakeFiles/tensor_test.dir/src/Tensor.cpp.o
+/root/star/inference/Inference_frame/bin/tensor_test: CMakeFiles/tensor_test.dir/build.make
+/root/star/inference/Inference_frame/bin/tensor_test: /usr/local/lib/libglog.so.0.7.1
+/root/star/inference/Inference_frame/bin/tensor_test: /usr/lib/x86_64-linux-gnu/libarmadillo.so
+/root/star/inference/Inference_frame/bin/tensor_test: CMakeFiles/tensor_test.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable /root/star/inference/Inference_frame/bin/tensor_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/tensor_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/tensor_test.dir/build: /root/star/inference/inference_frame/bin/tensor_test
+CMakeFiles/tensor_test.dir/build: /root/star/inference/Inference_frame/bin/tensor_test
 .PHONY : CMakeFiles/tensor_test.dir/build
 
 CMakeFiles/tensor_test.dir/clean:
@@ -123,6 +123,6 @@ CMakeFiles/tensor_test.dir/clean:
 .PHONY : CMakeFiles/tensor_test.dir/clean
 
 CMakeFiles/tensor_test.dir/depend:
-	cd /root/star/inference/inference_frame/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/star/inference/inference_frame /root/star/inference/inference_frame /root/star/inference/inference_frame/build /root/star/inference/inference_frame/build /root/star/inference/inference_frame/build/CMakeFiles/tensor_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/star/inference/Inference_frame/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/star/inference/Inference_frame /root/star/inference/Inference_frame /root/star/inference/Inference_frame/build /root/star/inference/Inference_frame/build /root/star/inference/Inference_frame/build/CMakeFiles/tensor_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/tensor_test.dir/depend
 

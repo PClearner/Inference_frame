@@ -17,7 +17,7 @@ add_executable(tensor_test
 
 
 find_package(glog REQUIRED)
-find_package(GTest REQUIRED)
+# find_package(GTest REQUIRED)
 find_package(Armadillo REQUIRED)
 target_link_libraries(tensor_test glog::glog ${ARMADILLO_LIBRARIES})
 
