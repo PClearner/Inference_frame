@@ -18,30 +18,30 @@ namespace star
 
     public:
         /**
-         * Ïò×¢²á±í×¢²áËã×Ó
-         * @param layer_type Ëã×ÓµÄÀàĞÍ
-         * @param creator ĞèÒª×¢²áËã×ÓµÄ×¢²á±í
+         * å‘æ³¨å†Œè¡¨æ³¨å†Œç®—å­
+         * @param layer_type ç®—å­çš„ç±»å‹
+         * @param creator éœ€è¦æ³¨å†Œç®—å­çš„æ³¨å†Œè¡¨
          */
         static void RegisterCreator(const std::string &layer_type,
                                     const Creator &creator);
 
         /**
-         * Í¨¹ıËã×Ó²ÎÊıopÀ´³õÊ¼»¯Layer
-         * @param op ±£´æÁË³õÊ¼»¯LayerĞÅÏ¢µÄËã×Ó
-         * @return ³õÊ¼»¯ºóµÄLayer
+         * é€šè¿‡ç®—å­å‚æ•°opæ¥åˆå§‹åŒ–Layer
+         * @param op ä¿å­˜äº†åˆå§‹åŒ–Layerä¿¡æ¯çš„ç®—å­
+         * @return åˆå§‹åŒ–åçš„Layer
          */
         static std::shared_ptr<Layer> CreateLayer(
             const std::shared_ptr<RuntimeOperator> &op);
 
         /**
-         * ·µ»ØËã×ÓµÄ×¢²á±í
-         * @return Ëã×ÓµÄ×¢²á±í
+         * è¿”å›ç®—å­çš„æ³¨å†Œè¡¨
+         * @return ç®—å­çš„æ³¨å†Œè¡¨
          */
         static CreateRegistry &Registry();
 
         /**
-         * ·µ»ØËùÓĞÒÑ±»×¢²áËã×ÓµÄÀàĞÍ
-         * @return ×¢²áËã×ÓµÄÀàĞÍÁĞ±í
+         * è¿”å›æ‰€æœ‰å·²è¢«æ³¨å†Œç®—å­çš„ç±»å‹
+         * @return æ³¨å†Œç®—å­çš„ç±»å‹åˆ—è¡¨
          */
         static std::vector<std::string> layer_types();
     };

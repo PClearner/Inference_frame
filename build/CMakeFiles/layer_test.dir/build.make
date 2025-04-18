@@ -279,6 +279,48 @@ CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.s
 
+CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o: CMakeFiles/layer_test.dir/flags.make
+CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o: /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp
+CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp
+
+CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp > CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.i
+
+CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.s
+
+CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o: CMakeFiles/layer_test.dir/flags.make
+CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o: /root/star/inference/inference_frame/src/layer/detail/convolution.cpp
+CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/convolution.cpp
+
+CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/convolution.cpp > CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.i
+
+CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/convolution.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.s
+
+CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o: CMakeFiles/layer_test.dir/flags.make
+CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o: /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp
+CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o: CMakeFiles/layer_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o -MF CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o.d -o CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp
+
+CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp > CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.i
+
+CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp -o CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.s
+
 # Object files for target layer_test
 layer_test_OBJECTS = \
 "CMakeFiles/layer_test.dir/test/layer_test.cpp.o" \
@@ -295,7 +337,10 @@ layer_test_OBJECTS = \
 "CMakeFiles/layer_test.dir/src/layer/abstract/non_param_layer.cpp.o" \
 "CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o" \
 "CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o" \
-"CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o"
+"CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o" \
+"CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o" \
+"CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o" \
+"CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o"
 
 # External object files for target layer_test
 layer_test_EXTERNAL_OBJECTS =
@@ -315,11 +360,14 @@ layer_test_EXTERNAL_OBJECTS =
 /root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/abstract/param_layer.cpp.o
 /root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/relu.cpp.o
 /root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/sigmoid.cpp.o
+/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/maxpooling.cpp.o
+/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/convolution.cpp.o
+/root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/src/layer/detail/avgpooling.cpp.o
 /root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/build.make
 /root/star/inference/inference_frame/bin/layer/layer_test: /usr/local/lib/libglog.so.0.8.0
 /root/star/inference/inference_frame/bin/layer/layer_test: /usr/lib/x86_64-linux-gnu/libarmadillo.so
 /root/star/inference/inference_frame/bin/layer/layer_test: CMakeFiles/layer_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable /root/star/inference/inference_frame/bin/layer/layer_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable /root/star/inference/inference_frame/bin/layer/layer_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/layer_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

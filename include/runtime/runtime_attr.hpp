@@ -14,7 +14,7 @@ namespace star
         std::vector<char> weight_data;
         std::vector<int> shape;
 
-        RuntimeDataType type = RuntimeDataType::kTypeUnknown;
+        RuntimeDataType type = RuntimeDataType::TypeUnknown;
 
         template <class T>
         std::vector<T> get(bool need_clear_weight = true);
@@ -26,12 +26,12 @@ namespace star
     std::vector<T> RuntimeAttribute::get(bool need_clear_weight)
     {
         CHECK(!weight_data.empty());
-        CHECK(type != RuntimeDataType::kTypeUnknown);
+        CHECK(type != RuntimeDataType::TypeUnknown);
         std::vector<T> weight;
         switch (type)
         {
 
-        case RuntimeDataType::kTypeFloat32:
+        case RuntimeDataType::TypeFloat32:
         {
             const bool is_float = std::is_same<T, float>::value;
             CHECK_EQ(is_float, true);

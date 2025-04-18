@@ -1,4 +1,5 @@
 #include "layer/detail/sigmoid.hpp"
+#include "layer/abstract/layer_factory.hpp"
 #include <armadillo>
 
 namespace star
@@ -82,4 +83,7 @@ namespace star
         sigmoid_layer = std::make_shared<SigmoidLayer>();
         return ParseParameterAttrStatus::ParameterAttrParseSuccess;
     }
+
+    LayerRegistererWrapper Sigmoidwrapper("nn.Sigmoid",
+                                          SigmoidLayer::GetInstance);
 }

@@ -11,19 +11,19 @@ namespace star
     {
     public:
         /**
-         * ´ÓcsvÎÄ¼şÖĞ³õÊ¼»¯ÕÅÁ¿
-         * @param file_path csvÎÄ¼şµÄÂ·¾¶
-         * @param split_char ·Ö¸ô·ûºÅ
-         * @return ¸ù¾İcsvÎÄ¼şµÃµ½µÄÕÅÁ¿
+         * ä»csvæ–‡ä»¶ä¸­åˆå§‹åŒ–å¼ é‡
+         * @param file_path csvæ–‡ä»¶çš„è·¯å¾„
+         * @param split_char åˆ†éš”ç¬¦å·
+         * @return æ ¹æ®csvæ–‡ä»¶å¾—åˆ°çš„å¼ é‡
          */
         static arma::fmat LoadData(const std::string &file_path, char split_char = ',');
 
     private:
         /**
-         * µÃµ½csvÎÄ¼şµÄ³ß´ç´óĞ¡£¬LoadDataÖĞ¸ù¾İÕâÀï·µ»ØµÄ³ß´ç´óĞ¡³õÊ¼»¯·µ»ØµÄfmat
-         * @param file csvÎÄ¼şµÄÂ·¾¶
-         * @param split_char ·Ö¸î·ûºÅ
-         * @return ¸ù¾İcsvÎÄ¼şµÄ³ß´ç´óĞ¡
+         * å¾—åˆ°csvæ–‡ä»¶çš„å°ºå¯¸å¤§å°ï¼ŒLoadDataä¸­æ ¹æ®è¿™é‡Œè¿”å›çš„å°ºå¯¸å¤§å°åˆå§‹åŒ–è¿”å›çš„fmat
+         * @param file csvæ–‡ä»¶çš„è·¯å¾„
+         * @param split_char åˆ†å‰²ç¬¦å·
+         * @return æ ¹æ®csvæ–‡ä»¶çš„å°ºå¯¸å¤§å°
          */
         static std::pair<size_t, size_t> GetMatrixSize(std::ifstream &file, char split_char);
     };

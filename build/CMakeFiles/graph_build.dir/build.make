@@ -279,6 +279,48 @@ CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/sigmoid.cpp -o CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.s
 
+CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o: /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp
+CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp
+
+CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp > CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/maxpooling.cpp -o CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.s
+
+CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o: /root/star/inference/inference_frame/src/layer/detail/convolution.cpp
+CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/convolution.cpp
+
+CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/convolution.cpp > CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/convolution.cpp -o CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.s
+
+CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o: CMakeFiles/graph_build.dir/flags.make
+CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o: /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp
+CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o: CMakeFiles/graph_build.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o -MF CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o.d -o CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o -c /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp
+
+CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp > CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.i
+
+CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/inference_frame/src/layer/detail/avgpooling.cpp -o CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.s
+
 # Object files for target graph_build
 graph_build_OBJECTS = \
 "CMakeFiles/graph_build.dir/test/graph_build.cpp.o" \
@@ -295,7 +337,10 @@ graph_build_OBJECTS = \
 "CMakeFiles/graph_build.dir/src/layer/abstract/non_param_layer.cpp.o" \
 "CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o" \
 "CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o" \
-"CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o"
+"CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o" \
+"CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o"
 
 # External object files for target graph_build
 graph_build_EXTERNAL_OBJECTS =
@@ -315,11 +360,14 @@ graph_build_EXTERNAL_OBJECTS =
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/abstract/param_layer.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/detail/relu.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/detail/sigmoid.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/detail/maxpooling.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/detail/convolution.cpp.o
+/root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/src/layer/detail/avgpooling.cpp.o
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/build.make
 /root/star/inference/inference_frame/bin/graph/graph_build: /usr/local/lib/libglog.so.0.8.0
 /root/star/inference/inference_frame/bin/graph/graph_build: /usr/lib/x86_64-linux-gnu/libarmadillo.so
 /root/star/inference/inference_frame/bin/graph/graph_build: CMakeFiles/graph_build.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking CXX executable /root/star/inference/inference_frame/bin/graph/graph_build"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable /root/star/inference/inference_frame/bin/graph/graph_build"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graph_build.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

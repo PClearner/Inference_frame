@@ -425,3 +425,125 @@ make: *** [Makefile:127: cmTC_76b89/fast] Error 2
 
 
 
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-Rll6DL
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_c8820/fast && /usr/bin/make  -f CMakeFiles/cmTC_c8820.dir/build.make CMakeFiles/cmTC_c8820.dir/build
+make[1]: Entering directory '/root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-Rll6DL'
+Building C object CMakeFiles/cmTC_c8820.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_c8820.dir/src.c.o -c /root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-Rll6DL/src.c
+Linking C executable cmTC_c8820
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c8820.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_c8820.dir/src.c.o -o cmTC_c8820 
+/usr/bin/ld: CMakeFiles/cmTC_c8820.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_c8820.dir/build.make:99: cmTC_c8820] Error 1
+make[1]: Leaving directory '/root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-Rll6DL'
+make: *** [Makefile:127: cmTC_c8820/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-8a1q3M
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5c788/fast && /usr/bin/make  -f CMakeFiles/cmTC_5c788.dir/build.make CMakeFiles/cmTC_5c788.dir/build
+make[1]: Entering directory '/root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-8a1q3M'
+Building C object CMakeFiles/cmTC_5c788.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_5c788.dir/CheckFunctionExists.c.o -c /root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-8a1q3M/CheckFunctionExists.c
+Linking C executable cmTC_5c788
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c788.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_5c788.dir/CheckFunctionExists.c.o -o cmTC_5c788  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_5c788.dir/build.make:99: cmTC_5c788] Error 1
+make[1]: Leaving directory '/root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-8a1q3M'
+make: *** [Makefile:127: cmTC_5c788/fast] Error 2
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-hNCyRM
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_752bd/fast && /usr/bin/make  -f CMakeFiles/cmTC_752bd.dir/build.make CMakeFiles/cmTC_752bd.dir/build
+make[1]: Entering directory '/root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-hNCyRM'
+Building C object CMakeFiles/cmTC_752bd.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_752bd.dir/src.c.o -c /root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-hNCyRM/src.c
+Linking C executable cmTC_752bd
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_752bd.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_752bd.dir/src.c.o -o cmTC_752bd 
+/usr/bin/ld: CMakeFiles/cmTC_752bd.dir/src.c.o: in function `main':
+src.c:(.text+0x46): undefined reference to `pthread_create'
+/usr/bin/ld: src.c:(.text+0x52): undefined reference to `pthread_detach'
+/usr/bin/ld: src.c:(.text+0x5e): undefined reference to `pthread_cancel'
+/usr/bin/ld: src.c:(.text+0x6f): undefined reference to `pthread_join'
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_752bd.dir/build.make:99: cmTC_752bd] Error 1
+make[1]: Leaving directory '/root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-hNCyRM'
+make: *** [Makefile:127: cmTC_752bd/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-gaj1pO
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_9434b/fast && /usr/bin/make  -f CMakeFiles/cmTC_9434b.dir/build.make CMakeFiles/cmTC_9434b.dir/build
+make[1]: Entering directory '/root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-gaj1pO'
+Building C object CMakeFiles/cmTC_9434b.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -o CMakeFiles/cmTC_9434b.dir/CheckFunctionExists.c.o -c /root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-gaj1pO/CheckFunctionExists.c
+Linking C executable cmTC_9434b
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9434b.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_9434b.dir/CheckFunctionExists.c.o -o cmTC_9434b  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+make[1]: *** [CMakeFiles/cmTC_9434b.dir/build.make:99: cmTC_9434b] Error 1
+make[1]: Leaving directory '/root/star/inference/inference_frame/build/CMakeFiles/CMakeScratch/TryCompile-gaj1pO'
+make: *** [Makefile:127: cmTC_9434b/fast] Error 2
+
+
+

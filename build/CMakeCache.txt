@@ -238,9 +238,6 @@ GTest_DIR:PATH=/root/miniconda3/lib/cmake/GTest
 //The directory containing a CMake configuration file for glog.
 glog_DIR:PATH=/usr/local/lib/cmake/glog
 
-//The directory containing a CMake configuration file for gtest.
-gtest_DIR:PATH=gtest_DIR-NOTFOUND
-
 //Value Computed by CMake
 inference_frame_BINARY_DIR:STATIC=/root/star/inference/inference_frame/build
 

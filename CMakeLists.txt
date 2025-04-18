@@ -49,6 +49,9 @@ set(SOURCE
     ${CMAKE_SOURCE_DIR}/src/layer/abstract/param_layer.cpp 
     ${CMAKE_SOURCE_DIR}/src/layer/detail/relu.cpp 
     ${CMAKE_SOURCE_DIR}/src/layer/detail/sigmoid.cpp
+    ${CMAKE_SOURCE_DIR}/src/layer/detail/maxpooling.cpp
+    ${CMAKE_SOURCE_DIR}/src/layer/detail/convolution.cpp
+    ${CMAKE_SOURCE_DIR}/src/layer/detail/avgpooling.cpp
 )
 
 add_executable(graph_test 
@@ -91,5 +94,15 @@ add_executable(layer_test
 target_link_libraries(layer_test glog::glog  ${ARMADILLO_LIBRARIES})
 set_target_properties(layer_test PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/layer
+    )
+
+add_executable(conv_test
+    ${CMAKE_SOURCE_DIR}/test/conv_test.cpp
+    ${SOURCE}
+)
+
+target_link_libraries(conv_test glog::glog  ${ARMADILLO_LIBRARIES})
+set_target_properties(conv_test PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/conv
     )
 

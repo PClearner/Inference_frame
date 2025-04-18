@@ -1,4 +1,5 @@
 #include "layer/detail/relu.hpp"
+#include "layer/abstract/layer_factory.hpp"
 
 namespace star
 {
@@ -80,4 +81,7 @@ namespace star
         relu_layer = std::make_shared<ReluLayer>();
         return ParseParameterAttrStatus::ParameterAttrParseSuccess;
     }
+
+    LayerRegistererWrapper Reluwrapper("nn.Relu",
+                                       ReluLayer::GetInstance);
 }

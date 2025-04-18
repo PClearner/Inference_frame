@@ -19,76 +19,76 @@ namespace star
         virtual ~Layer() = default;
 
         /**
-         * LayerµÄÖ´ĞĞº¯Êı
-         * @param inputs ²ãµÄÊäÈë
-         * @param outputs ²ãµÄÊä³ö
-         * @return Ö´ĞĞµÄ×´Ì¬
+         * Layerçš„æ‰§è¡Œå‡½æ•°
+         * @param inputs å±‚çš„è¾“å…¥
+         * @param outputs å±‚çš„è¾“å‡º
+         * @return æ‰§è¡Œçš„çŠ¶æ€
          */
         virtual InferStatus Forward(
             const std::vector<std::shared_ptr<Tensor<float>>> &inputs,
             std::vector<std::shared_ptr<Tensor<float>>> &outputs);
 
         /**
-         * LayerµÄÖ´ĞĞº¯Êı
-         * @param current_operator µ±Ç°µÄoperator
-         * @return Ö´ĞĞµÄ×´Ì¬
+         * Layerçš„æ‰§è¡Œå‡½æ•°
+         * @param current_operator å½“å‰çš„operator
+         * @return æ‰§è¡Œçš„çŠ¶æ€
          */
         virtual InferStatus Forward();
 
         /**
-         * ·µ»Ø²ãµÄÈ¨ÖØ
-         * @return ·µ»ØµÄÈ¨ÖØ
+         * è¿”å›å±‚çš„æƒé‡
+         * @return è¿”å›çš„æƒé‡
          */
         virtual const std::vector<std::shared_ptr<Tensor<float>>> &weights() const;
 
         /**
-         * ·µ»Ø²ãµÄÆ«ÒÆÁ¿
-         * @return ·µ»ØµÄÆ«ÒÆÁ¿
+         * è¿”å›å±‚çš„åç§»é‡
+         * @return è¿”å›çš„åç§»é‡
          */
         virtual const std::vector<std::shared_ptr<Tensor<float>>> &bias() const;
 
         /**
-         * ÉèÖÃLayerµÄÈ¨ÖØ
-         * @param weights È¨ÖØ
+         * è®¾ç½®Layerçš„æƒé‡
+         * @param weights æƒé‡
          */
         virtual void set_weights(
             const std::vector<std::shared_ptr<Tensor<float>>> &weights);
 
         /**
-         * ÉèÖÃLayerµÄÆ«ÒÆÁ¿
-         * @param bias Æ«ÒÆÁ¿
+         * è®¾ç½®Layerçš„åç§»é‡
+         * @param bias åç§»é‡
          */
         virtual void set_bias(
             const std::vector<std::shared_ptr<Tensor<float>>> &bias);
 
         /**
-         * ÉèÖÃLayerµÄÈ¨ÖØ
-         * @param weights È¨ÖØ
+         * è®¾ç½®Layerçš„æƒé‡
+         * @param weights æƒé‡
          */
         virtual void set_weights(const std::vector<float> &weights);
 
         /**
-         * ÉèÖÃLayerµÄÆ«ÒÆÁ¿
-         * @param bias Æ«ÒÆÁ¿
+         * è®¾ç½®Layerçš„åç§»é‡
+         * @param bias åç§»é‡
          */
         virtual void set_bias(const std::vector<float> &bias);
 
         /**
-         * ·µ»Ø²ãµÄÃû³Æ
-         * @return ²ãµÄÃû³Æ
+         * è¿”å›å±‚çš„åç§°
+         * @return å±‚çš„åç§°
          */
         virtual const std::string &layer_name() const { return this->layer_name_; }
 
         /**
-         * ÉèÖÃ²ãµÄÖ´ĞĞËã×Ó
-         * @param runtime_operator ¸Ã²ãµÄÖ´ĞĞËã×Ó
+         * è®¾ç½®å±‚çš„æ‰§è¡Œç®—å­
+         * @param runtime_operator è¯¥å±‚çš„æ‰§è¡Œç®—å­
          */
         void set_runtime_operator(
             const std::shared_ptr<RuntimeOperator> &runtime_operator);
 
     protected:
         std::weak_ptr<RuntimeOperator> runtime_operator_;
-        std::string layer_name_; /// LayerµÄÃû³Æ
+        std::string layer_name_; /// Layerçš„åç§°
     };
 
 }

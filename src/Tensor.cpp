@@ -392,7 +392,14 @@ namespace star
         }
         return *this;
     }
-
+    float *Tensor<float>::matrix_raw_ptr(uint32_t index)
+    {
+        CHECK_LT(index, this->channels());
+        uint32_t offset = index * this->rows() * this->cols();
+        CHECK_LE(offset, this->size());
+        float *mem_ptr = this->raw_ptr() + offset;
+        return mem_ptr;
+    }
     void Tensor<float>::Padding(const std::vector<uint32_t> &pads, float padding_value)
     {
         // check

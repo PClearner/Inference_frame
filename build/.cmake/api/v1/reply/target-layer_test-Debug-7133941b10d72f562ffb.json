@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/root/star/inference/inference_frame/bin/graph/graph_test"
+			"path" : "/root/star/inference/inference_frame/bin/layer/layer_test"
 		}
 	],
 	"backtrace" : 1,
@@ -27,7 +27,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 54,
+				"line" : 85,
 				"parent" : 0
 			},
 			{
@@ -39,7 +39,7 @@
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 62,
+				"line" : 94,
 				"parent" : 0
 			},
 			{
@@ -101,11 +101,14 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15,
+				16,
+				17
 			]
 		}
 	],
-	"id" : "graph_test::@6890427a1f51a3e7e1df",
+	"id" : "layer_test::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -140,8 +143,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "graph_test",
-	"nameOnDisk" : "graph_test",
+	"name" : "layer_test",
+	"nameOnDisk" : "layer_test",
 	"paths" : 
 	{
 		"build" : ".",
@@ -167,7 +170,10 @@
 				11,
 				12,
 				13,
-				14
+				14,
+				15,
+				16,
+				17
 			]
 		}
 	],
@@ -176,7 +182,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "test/graph_test.cpp",
+			"path" : "test/layer_test.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -261,6 +267,24 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "src/layer/detail/sigmoid.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/layer/detail/maxpooling.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/layer/detail/convolution.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "src/layer/detail/avgpooling.cpp",
 			"sourceGroupIndex" : 0
 		}
 	],

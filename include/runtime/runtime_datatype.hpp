@@ -4,14 +4,14 @@ namespace star
 {
     enum class RuntimeDataType
     {
-        kTypeUnknown = 0,
-        kTypeFloat32 = 1,
-        kTypeFloat64 = 2,
-        kTypeFloat16 = 3,
-        kTypeInt32 = 4,
-        kTypeInt64 = 5,
-        kTypeInt16 = 6,
-        kTypeInt8 = 7,
-        kTypeUInt8 = 8,
+        TypeUnknown = 0,
+        TypeFloat32 = 1,
+        TypeFloat64 = 2,
+        TypeFloat16 = 3,
+        TypeInt32 = 4,
+        TypeInt64 = 5,
+        TypeInt16 = 6,
+        TypeInt8 = 7,
+        TypeUInt8 = 8,
     };
 }

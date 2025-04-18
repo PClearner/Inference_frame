@@ -9,59 +9,59 @@ namespace star
         explicit ParamLayer(const std::string &layer_name);
 
         /**
-         * ³õÊ¼»¯È¨ÖØ¿Õ¼ä
-         * @param param_count   ¾í»ıºËÊıÁ¿
-         * @param param_channel ¾í»ıµÄÍ¨µÀÊıÁ¿
-         * @param param_height  ¾í»ıµÄ¸ß¶È
-         * @param param_width   ¾í»ıµÄ¿í¶È
+         * åˆå§‹åŒ–æƒé‡ç©ºé—´
+         * @param param_count   å·ç§¯æ ¸æ•°é‡
+         * @param param_channel å·ç§¯çš„é€šé“æ•°é‡
+         * @param param_height  å·ç§¯çš„é«˜åº¦
+         * @param param_width   å·ç§¯çš„å®½åº¦
          */
         void InitWeightParam(const uint32_t param_count, const uint32_t param_channel,
                              const uint32_t param_height, const uint32_t param_width);
 
         /**
-         * ³õÊ¼»¯Æ«ÒÆ²ÎÊı
-         * @param param_count Æ«ÒÆ²ÎÊıÊıÁ¿
-         * @param param_channel Æ«ÒÆ²ÎÊıÍ¨µÀÊıÁ¿
-         * @param param_height Æ«ÒÆ²ÎÊı¸ß¶È
-         * @param param_width  Æ«ÒÆ²ÎÊı¿í¶È
+         * åˆå§‹åŒ–åç§»å‚æ•°
+         * @param param_count åç§»å‚æ•°æ•°é‡
+         * @param param_channel åç§»å‚æ•°é€šé“æ•°é‡
+         * @param param_height åç§»å‚æ•°é«˜åº¦
+         * @param param_width  åç§»å‚æ•°å®½åº¦
          */
         void InitBiasParam(const uint32_t param_count, const uint32_t param_channel,
                            const uint32_t param_height, const uint32_t param_width);
 
         /**
-         * ·µ»ØÈ¨ÖØ²ÎÊı
-         * @return È¨ÖØ²ÎÊı
+         * è¿”å›æƒé‡å‚æ•°
+         * @return æƒé‡å‚æ•°
          */
         const std::vector<std::shared_ptr<Tensor<float>>> &weights() const override;
 
         /**
-         * ·µ»ØÆ«ÒÆ²ÎÊı
-         * @return Æ«ÒÆ²ÎÊı
+         * è¿”å›åç§»å‚æ•°
+         * @return åç§»å‚æ•°
          */
         const std::vector<std::shared_ptr<Tensor<float>>> &bias() const override;
 
         /**
-         * ÉèÖÃÈ¨ÖØ²ÎÊı
-         * @param weights È¨ÖØ²ÎÊı
+         * è®¾ç½®æƒé‡å‚æ•°
+         * @param weights æƒé‡å‚æ•°
          */
         void set_weights(const std::vector<float> &weights) override;
 
         /**
-         * ÉèÖÃÆ«ÒÆÁ¿²ÎÊı
-         * @param bias Æ«ÒÆÁ¿²ÎÊı
+         * è®¾ç½®åç§»é‡å‚æ•°
+         * @param bias åç§»é‡å‚æ•°
          */
         void set_bias(const std::vector<float> &bias) override;
 
         /**
-         * ÉèÖÃÈ¨ÖØ²ÎÊı
-         * @param weights È¨ÖØ²ÎÊı
+         * è®¾ç½®æƒé‡å‚æ•°
+         * @param weights æƒé‡å‚æ•°
          */
         void set_weights(
             const std::vector<std::shared_ptr<Tensor<float>>> &weights) override;
 
         /**
-         * ÉèÖÃÆ«ÒÆÁ¿²ÎÊı
-         * @param bias Æ«ÒÆÁ¿²ÎÊı
+         * è®¾ç½®åç§»é‡å‚æ•°
+         * @param bias åç§»é‡å‚æ•°
          */
         void set_bias(
             const std::vector<std::shared_ptr<Tensor<float>>> &bias) override;

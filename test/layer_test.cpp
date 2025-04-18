@@ -54,7 +54,7 @@ void layercreate_test()
 
 void RegisterCreator_test()
 {
-    // 注册了一个test_type_1算子
+    // 娉ㄥ唽浜嗕竴涓猼est_type_1绠楀瓙
     LayerRegisterer::RegisterCreator("test_type_1", MyTestCreator);
     std::shared_ptr<RuntimeOperator> op = std::make_shared<RuntimeOperator>();
     op->type = "test_type_1";

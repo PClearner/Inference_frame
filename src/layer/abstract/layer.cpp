@@ -11,9 +11,9 @@ namespace star
     }
 
     /**
-     * LayerµÄÖ´ĞĞº¯Êı
-     * @param current_operator µ±Ç°µÄoperator
-     * @return Ö´ĞĞµÄ×´Ì¬
+     * Layerçš„æ‰§è¡Œå‡½æ•°
+     * @param current_operator å½“å‰çš„operator
+     * @return æ‰§è¡Œçš„çŠ¶æ€
      */
     InferStatus Layer::Forward()
     {
@@ -40,8 +40,8 @@ namespace star
     }
 
     /**
-     * ·µ»Ø²ãµÄÈ¨ÖØ
-     * @return ·µ»ØµÄÈ¨ÖØ
+     * è¿”å›å±‚çš„æƒé‡
+     * @return è¿”å›çš„æƒé‡
      */
     const std::vector<std::shared_ptr<Tensor<float>>> &Layer::weights() const
     {
@@ -49,8 +49,8 @@ namespace star
     }
 
     /**
-     * ·µ»Ø²ãµÄÆ«ÒÆÁ¿
-     * @return ·µ»ØµÄÆ«ÒÆÁ¿
+     * è¿”å›å±‚çš„åç§»é‡
+     * @return è¿”å›çš„åç§»é‡
      */
     const std::vector<std::shared_ptr<Tensor<float>>> &Layer::bias() const
     {
@@ -58,8 +58,8 @@ namespace star
     }
 
     /**
-     * ÉèÖÃLayerµÄÈ¨ÖØ
-     * @param weights È¨ÖØ
+     * è®¾ç½®Layerçš„æƒé‡
+     * @param weights æƒé‡
      */
     void Layer::set_weights(
         const std::vector<std::shared_ptr<Tensor<float>>> &weights)
@@ -68,8 +68,8 @@ namespace star
     }
 
     /**
-     * ÉèÖÃLayerµÄÆ«ÒÆÁ¿
-     * @param bias Æ«ÒÆÁ¿
+     * è®¾ç½®Layerçš„åç§»é‡
+     * @param bias åç§»é‡
      */
     void Layer::set_bias(
         const std::vector<std::shared_ptr<Tensor<float>>> &bias)
@@ -78,8 +78,8 @@ namespace star
     }
 
     /**
-     * ÉèÖÃLayerµÄÈ¨ÖØ
-     * @param weights È¨ÖØ
+     * è®¾ç½®Layerçš„æƒé‡
+     * @param weights æƒé‡
      */
     void Layer::set_weights(const std::vector<float> &weights)
     {
@@ -87,8 +87,8 @@ namespace star
     }
 
     /**
-     * ÉèÖÃLayerµÄÆ«ÒÆÁ¿
-     * @param bias Æ«ÒÆÁ¿
+     * è®¾ç½®Layerçš„åç§»é‡
+     * @param bias åç§»é‡
      */
     void Layer::set_bias(const std::vector<float> &bias)
     {
@@ -96,8 +96,8 @@ namespace star
     }
 
     /**
-     * ÉèÖÃ²ãµÄÖ´ĞĞËã×Ó
-     * @param runtime_operator ¸Ã²ãµÄÖ´ĞĞËã×Ó
+     * è®¾ç½®å±‚çš„æ‰§è¡Œç®—å­
+     * @param runtime_operator è¯¥å±‚çš„æ‰§è¡Œç®—å­
      */
     void Layer::set_runtime_operator(
         const std::shared_ptr<RuntimeOperator> &runtime_operator)

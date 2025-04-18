@@ -62,6 +62,7 @@ namespace star
          * @return 返回的通道
          */
         arma::fmat &slice(uint32_t channel);
+        float *matrix_raw_ptr(uint32_t index);
 
         /**
          * 返回张量第channel通道中的数据
