@@ -321,6 +321,34 @@ CMakeFiles/graph_test.dir/src/layer/detail/avgpooling.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_test.dir/src/layer/detail/avgpooling.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/detail/avgpooling.cpp -o CMakeFiles/graph_test.dir/src/layer/detail/avgpooling.cpp.s
 
+CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o: CMakeFiles/graph_test.dir/flags.make
+CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o: /root/star/inference/Inference_frame/src/layer/parse/parse_expression.cpp
+CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o: CMakeFiles/graph_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o -MF CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o.d -o CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o -c /root/star/inference/Inference_frame/src/layer/parse/parse_expression.cpp
+
+CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/parse/parse_expression.cpp > CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.i
+
+CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/parse/parse_expression.cpp -o CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.s
+
+CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o: CMakeFiles/graph_test.dir/flags.make
+CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o: /root/star/inference/Inference_frame/src/layer/detail/expr.cpp
+CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o: CMakeFiles/graph_test.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o -MF CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o.d -o CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o -c /root/star/inference/Inference_frame/src/layer/detail/expr.cpp
+
+CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/star/inference/Inference_frame/src/layer/detail/expr.cpp > CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.i
+
+CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/star/inference/Inference_frame/src/layer/detail/expr.cpp -o CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.s
+
 # Object files for target graph_test
 graph_test_OBJECTS = \
 "CMakeFiles/graph_test.dir/test/graph_test.cpp.o" \
@@ -340,7 +368,9 @@ graph_test_OBJECTS = \
 "CMakeFiles/graph_test.dir/src/layer/detail/sigmoid.cpp.o" \
 "CMakeFiles/graph_test.dir/src/layer/detail/maxpooling.cpp.o" \
 "CMakeFiles/graph_test.dir/src/layer/detail/convolution.cpp.o" \
-"CMakeFiles/graph_test.dir/src/layer/detail/avgpooling.cpp.o"
+"CMakeFiles/graph_test.dir/src/layer/detail/avgpooling.cpp.o" \
+"CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o" \
+"CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o"
 
 # External object files for target graph_test
 graph_test_EXTERNAL_OBJECTS =
@@ -363,11 +393,13 @@ graph_test_EXTERNAL_OBJECTS =
 /root/star/inference/Inference_frame/bin/graph/graph_test: CMakeFiles/graph_test.dir/src/layer/detail/maxpooling.cpp.o
 /root/star/inference/Inference_frame/bin/graph/graph_test: CMakeFiles/graph_test.dir/src/layer/detail/convolution.cpp.o
 /root/star/inference/Inference_frame/bin/graph/graph_test: CMakeFiles/graph_test.dir/src/layer/detail/avgpooling.cpp.o
+/root/star/inference/Inference_frame/bin/graph/graph_test: CMakeFiles/graph_test.dir/src/layer/parse/parse_expression.cpp.o
+/root/star/inference/Inference_frame/bin/graph/graph_test: CMakeFiles/graph_test.dir/src/layer/detail/expr.cpp.o
 /root/star/inference/Inference_frame/bin/graph/graph_test: CMakeFiles/graph_test.dir/build.make
 /root/star/inference/Inference_frame/bin/graph/graph_test: /usr/local/lib/libglog.so.0.7.1
 /root/star/inference/Inference_frame/bin/graph/graph_test: /usr/lib/x86_64-linux-gnu/libarmadillo.so
 /root/star/inference/Inference_frame/bin/graph/graph_test: CMakeFiles/graph_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Linking CXX executable /root/star/inference/Inference_frame/bin/graph/graph_test"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/star/inference/Inference_frame/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Linking CXX executable /root/star/inference/Inference_frame/bin/graph/graph_test"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/graph_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

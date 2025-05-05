@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.10.0)
 project(inference_frame VERSION 0.1.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 17)
-# 强制使用 C++17，不可回退，如果编译器不支持 C++ 17，直接报错
 set(CMAKE_CXX_STANDARD_REQUIRED TRUE)
 # add_executable(inference_frame main.cpp)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-unused-variable -Wno-unused-parameter")
@@ -52,6 +51,8 @@ set(SOURCE
     ${CMAKE_SOURCE_DIR}/src/layer/detail/maxpooling.cpp
     ${CMAKE_SOURCE_DIR}/src/layer/detail/convolution.cpp
     ${CMAKE_SOURCE_DIR}/src/layer/detail/avgpooling.cpp
+    ${CMAKE_SOURCE_DIR}/src/layer/parse/parse_expression.cpp
+    ${CMAKE_SOURCE_DIR}/src/layer/detail/expr.cpp
 )
 
 add_executable(graph_test 
@@ -105,4 +106,16 @@ target_link_libraries(conv_test glog::glog  ${ARMADILLO_LIBRARIES})
 set_target_properties(conv_test PROPERTIES
         RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/conv
     )
+
+
+    
+add_executable(expr_test
+    ${CMAKE_SOURCE_DIR}/test/expr_test.cpp
+    ${SOURCE}
+)
+
+target_link_libraries(expr_test glog::glog  ${ARMADILLO_LIBRARIES})
+set_target_properties(expr_test PROPERTIES
+        RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin/expr
+)
 

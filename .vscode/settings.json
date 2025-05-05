@@ -69,6 +69,7 @@
         "unordered_set": "cpp",
         "regex": "cpp",
         "future": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "stack": "cpp"
     }
 }

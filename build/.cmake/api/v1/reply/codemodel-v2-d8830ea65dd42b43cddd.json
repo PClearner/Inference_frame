@@ -1,0 +1,105 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.0"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "inference_frame",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "conv_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-conv_test-Debug-36b92eef8d166d8a6a4d.json",
+					"name" : "conv_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "expr_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-expr_test-Debug-95c73c0126a8ba8e3d6d.json",
+					"name" : "expr_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graph_build::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graph_build-Debug-b82fc0323d051a063c8e.json",
+					"name" : "graph_build",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "graph_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-graph_test-Debug-73a5c06d8bea878030d3.json",
+					"name" : "graph_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "layer_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-layer_test-Debug-e73af481a2b7d7878017.json",
+					"name" : "layer_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "tensor_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-tensor_test-Debug-367be90b8dd4f1798671.json",
+					"name" : "tensor_test",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/root/star/inference/Inference_frame/build",
+		"source" : "/root/star/inference/Inference_frame"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 4
+	}
+}
