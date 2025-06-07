@@ -62,24 +62,30 @@ namespace star
         std::unordered_map<int32_t, std::vector<std::shared_ptr<Tensor<float>>>> hash;
         std::stack<std::vector<std::shared_ptr<Tensor<float>>>> op_stack;
         const std::vector<std::shared_ptr<TokenNode>> &token_nodes = this->parser_->Generate();
+
         for (const auto &token_node : token_nodes)
         {
+
             if (token_node->num_index >= 0)
             {
+
                 std::vector<std::shared_ptr<Tensor<float>>> input_operand;
                 if (hash.find(token_node->num_index) == hash.end())
                 {
                     uint32_t start_pos;
+
                     for (uint32_t p = 0; p < this->order.size(); p++)
                     {
                         if (token_node->num_index == this->order[p])
                         {
+
                             start_pos = p * batch_size;
                         }
                     }
 
                     for (uint32_t i = 0; i < batch_size; i++)
                     {
+
                         input_operand.push_back(inputs.at(i + start_pos));
                     }
                 }
@@ -106,7 +112,7 @@ namespace star
                     << batch_size;
                 op_stack.pop();
                 std::vector<std::shared_ptr<Tensor<float>>> output_operands(batch_size);
-                if (token_node->num_index == int(TokenType::TokenMul))
+                if (token_node->num_index == int(TokenType::TokenAdd))
                 {
                     for (uint32_t j = 0; j < operand1.size(); j++)
                     {
@@ -117,6 +123,7 @@ namespace star
                 {
                     for (uint32_t j = 0; j < operand1.size(); j++)
                     {
+
                         output_operands.at(j) = TensorElementMultiply(operand1.at(j), operand2.at(j));
                     }
                 }
@@ -124,7 +131,6 @@ namespace star
             }
             else if (token_node->num_index == int(TokenType::TokenSin))
             {
-                LOG(INFO) << "sin start";
                 std::vector<std::shared_ptr<Tensor<float>>> operand1 = op_stack.top();
                 CHECK(operand1.size() == batch_size)
                     << "The first operand doesn't have appropriate number of tensors, "
@@ -149,6 +155,7 @@ namespace star
             }
             else
             {
+
                 LOG(FATAL) << "Unknown operator type: " << token_node->num_index;
             }
         }
@@ -193,6 +200,10 @@ namespace star
 
         auto layer = std::dynamic_pointer_cast<ExpressionLayer>(expression_layer);
         std::shared_ptr<RuntimeOperator> runop = layer->runtime_operator_.lock();
+        if (runop->input_operands_seq.empty())
+        {
+            LOG(ERROR) << "runop->input_operands_seq.empty()";
+        }
         for (const auto &operand : runop->input_operands_seq)
         {
             layer->order.push_back(std::stoi(operand->name));

@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/star/inference/Inference_frame/bin/expr/expr_test"
-  "/root/star/inference/Inference_frame/bin/expr/expr_test.pdb"
+  "../bin/expr/expr_test"
+  "../bin/expr/expr_test.pdb"
   "CMakeFiles/expr_test.dir/src/Tensor.cpp.o"
   "CMakeFiles/expr_test.dir/src/Tensor.cpp.o.d"
   "CMakeFiles/expr_test.dir/src/ir.cpp.o"

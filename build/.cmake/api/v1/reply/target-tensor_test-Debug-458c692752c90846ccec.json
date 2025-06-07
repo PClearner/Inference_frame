@@ -2,7 +2,7 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "/root/star/inference/Inference_frame/bin/tensor_test"
+			"path" : "/home/star/star/inference/Inference_frame/bin/tensor_test"
 		}
 	],
 	"backtrace" : 1,
@@ -73,7 +73,7 @@
 			[
 				{
 					"backtrace" : 4,
-					"path" : "/root/star/inference/Inference_frame/include"
+					"path" : "/home/star/star/inference/Inference_frame/include"
 				}
 			],
 			"language" : "CXX",
@@ -116,12 +116,12 @@
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/usr/local/lib/libglog.so.0.7.1",
+				"fragment" : "/usr/local/lib/libglog.so.0.8.0",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 3,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libarmadillo.so",
+				"fragment" : "/usr/local/lib/libarmadillo.so",
 				"role" : "libraries"
 			}
 		],

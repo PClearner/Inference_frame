@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/star/inference/Inference_frame/bin/graph/graph_build"
-  "/root/star/inference/Inference_frame/bin/graph/graph_build.pdb"
+  "../bin/graph/graph_build"
+  "../bin/graph/graph_build.pdb"
   "CMakeFiles/graph_build.dir/src/Tensor.cpp.o"
   "CMakeFiles/graph_build.dir/src/Tensor.cpp.o.d"
   "CMakeFiles/graph_build.dir/src/ir.cpp.o"

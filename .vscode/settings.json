@@ -70,6 +70,8 @@
         "regex": "cpp",
         "future": "cpp",
         "iomanip": "cpp",
-        "stack": "cpp"
+        "stack": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp"
     }
 }

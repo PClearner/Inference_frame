@@ -17,6 +17,11 @@ namespace star
             const std::shared_ptr<RuntimeOperator> &op,
             std::shared_ptr<Layer> &expression_layer);
 
+        std::vector<int32_t> &get_order()
+        {
+            return this->order;
+        }
+
     private:
         std::string statement_;
         std::unique_ptr<ExpressionParser> parser_;

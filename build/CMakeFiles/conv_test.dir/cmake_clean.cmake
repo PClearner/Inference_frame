@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "/root/star/inference/Inference_frame/bin/conv/conv_test"
-  "/root/star/inference/Inference_frame/bin/conv/conv_test.pdb"
+  "../bin/conv/conv_test"
+  "../bin/conv/conv_test.pdb"
   "CMakeFiles/conv_test.dir/src/Tensor.cpp.o"
   "CMakeFiles/conv_test.dir/src/Tensor.cpp.o.d"
   "CMakeFiles/conv_test.dir/src/ir.cpp.o"

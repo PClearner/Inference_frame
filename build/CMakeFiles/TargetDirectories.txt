@@ -1,8 +1,8 @@
-/root/star/inference/Inference_frame/build/CMakeFiles/tensor_test.dir
-/root/star/inference/Inference_frame/build/CMakeFiles/graph_test.dir
-/root/star/inference/Inference_frame/build/CMakeFiles/graph_build.dir
-/root/star/inference/Inference_frame/build/CMakeFiles/layer_test.dir
-/root/star/inference/Inference_frame/build/CMakeFiles/conv_test.dir
-/root/star/inference/Inference_frame/build/CMakeFiles/expr_test.dir
-/root/star/inference/Inference_frame/build/CMakeFiles/edit_cache.dir
-/root/star/inference/Inference_frame/build/CMakeFiles/rebuild_cache.dir
+/home/star/star/inference/Inference_frame/build/CMakeFiles/tensor_test.dir
+/home/star/star/inference/Inference_frame/build/CMakeFiles/graph_test.dir
+/home/star/star/inference/Inference_frame/build/CMakeFiles/graph_build.dir
+/home/star/star/inference/Inference_frame/build/CMakeFiles/layer_test.dir
+/home/star/star/inference/Inference_frame/build/CMakeFiles/conv_test.dir
+/home/star/star/inference/Inference_frame/build/CMakeFiles/expr_test.dir
+/home/star/star/inference/Inference_frame/build/CMakeFiles/edit_cache.dir
+/home/star/star/inference/Inference_frame/build/CMakeFiles/rebuild_cache.dir

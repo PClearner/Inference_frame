@@ -146,6 +146,10 @@ void complex()
     inputs.push_back(input2);
     inputs.push_back(input3);
 
+    layer.get_order().push_back(0);
+    layer.get_order().push_back(1);
+    layer.get_order().push_back(2);
+
     std::vector<std::shared_ptr<Tensor<float>>> outputs(1);
     outputs.at(0) = std::make_shared<Tensor<float>>(3, 224, 224);
     LOG(INFO) << "layer forward start";
@@ -158,8 +162,8 @@ void complex()
     output2->Fill(20.f);
     std::shared_ptr<Tensor<float>> output1 = outputs.front();
 
-    // CHECK_TRUE(
-    //     arma::approx_equal(output1->data(), output2->data(), "absdiff", 1e-5));
+    // LOG(INFO) << "output1->data()" << output1->data();
+    CHECK(arma::approx_equal(output1->data(), output2->data(), "absdiff", 1e-5));
 }
 
 void tokenizer_sin()
@@ -243,6 +247,9 @@ void complex2()
     inputs.push_back(input1);
     inputs.push_back(input2);
 
+    layer.get_order().push_back(0);
+    layer.get_order().push_back(1);
+
     std::vector<std::shared_ptr<Tensor<float>>> outputs(1);
     outputs.at(0) = std::make_shared<Tensor<float>>(3, 224, 224);
     LOG(INFO) << "layer forward start";
@@ -257,6 +264,7 @@ void complex2()
         std::make_shared<Tensor<float>>(3, 224, 224);
     output2->Fill(res);
     std::shared_ptr<Tensor<float>> output1 = outputs.front();
+    CHECK(arma::approx_equal(output1->data(), output2->data(), "absdiff", 1e-5));
 }
 
 int main()

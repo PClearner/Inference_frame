@@ -49,42 +49,42 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "conv_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-conv_test-Debug-36b92eef8d166d8a6a4d.json",
+					"jsonFile" : "target-conv_test-Debug-dcec5e5bfe3ff08d773d.json",
 					"name" : "conv_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "expr_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-expr_test-Debug-95c73c0126a8ba8e3d6d.json",
+					"jsonFile" : "target-expr_test-Debug-73bd815b9abe9fb42604.json",
 					"name" : "expr_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "graph_build::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-graph_build-Debug-b82fc0323d051a063c8e.json",
+					"jsonFile" : "target-graph_build-Debug-a38e7b335da2539490c0.json",
 					"name" : "graph_build",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "graph_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-graph_test-Debug-73a5c06d8bea878030d3.json",
+					"jsonFile" : "target-graph_test-Debug-d283605199058148d261.json",
 					"name" : "graph_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "layer_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-layer_test-Debug-e73af481a2b7d7878017.json",
+					"jsonFile" : "target-layer_test-Debug-b22e3998c57ffc5b42c8.json",
 					"name" : "layer_test",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "tensor_test::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-tensor_test-Debug-367be90b8dd4f1798671.json",
+					"jsonFile" : "target-tensor_test-Debug-458c692752c90846ccec.json",
 					"name" : "tensor_test",
 					"projectIndex" : 0
 				}
@@ -94,12 +94,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/root/star/inference/Inference_frame/build",
-		"source" : "/root/star/inference/Inference_frame"
+		"build" : "/home/star/star/inference/Inference_frame/build",
+		"source" : "/home/star/star/inference/Inference_frame"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 3
 	}
 }
